@@ -27,10 +27,15 @@ class DoctorApiController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'specialty' => 'required',
-            // Diğer alanlar için doğrulama kuralları
+//            'user_id' => 'required|exists:users,id',
+            'hospital_id' => 'required|exists:hospitals,id',
+            'department_id' => 'required|exists:departments,id',
+            'specialty' => 'nullable|string|max:255',
+            'phone' => 'nullable|string|max:255',
+            'email' => 'nullable|email|max:255',
+            'type' => 'required|in:devlet,ozel',
+            'likes' => 'integer|min:0',
+            'dislikes' => 'integer|min:0',
         ]);
 
         if ($validator->fails()) {
@@ -58,10 +63,15 @@ class DoctorApiController extends Controller
     public function update(Request $request, Doctor $doctor)
     {
         $validator = Validator::make($request->all(), [
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'specialty' => 'required',
-            // Diğer alanlar için doğrulama kuralları
+            'user_id' => 'sometimes|required|exists:users,id',
+            'hospital_id' => 'sometimes|required|exists:hospitals,id',
+            'department_id' => 'sometimes|required|exists:departments,id',
+            'specialty' => 'nullable|string|max:255',
+            'phone' => 'nullable|string|max:255',
+            'email' => 'nullable|email|max:255',
+            'type' => 'sometimes|required|in:devlet,ozel',
+            'likes' => 'integer|min:0',
+            'dislikes' => 'integer|min:0',
         ]);
 
         if ($validator->fails()) {

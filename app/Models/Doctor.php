@@ -48,7 +48,7 @@ class Doctor extends Model
 
     public function departments()
     {
-        return $this->belongsToMany(Department::class);
+        return $this->belongsToMany(Department::class, 'doctor_department');
     }
 
     public function appointments()
@@ -74,6 +74,26 @@ class Doctor extends Model
     public function ratings()
     {
         return $this->hasMany(DoctorRating::class);
+    }
+
+    public function phones()
+    {
+        return $this->hasMany(DoctorPhone::class);
+    }
+
+    public function addresses()
+    {
+        return $this->hasMany(DoctorAddress::class);
+    }
+
+    public function media()
+    {
+        return $this->hasMany(DoctorMedia::class);
+    }
+
+    public function specialties()
+    {
+        return $this->belongsToMany(Specialty::class, 'doctor_specialty');
     }
 
 }
