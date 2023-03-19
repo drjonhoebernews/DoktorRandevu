@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 
 class Doctor extends Model
 {
@@ -18,6 +19,22 @@ class Doctor extends Model
         'likes',
         'dislikes',
     ];
+
+    protected static function booted()
+    {
+        static::creating(function ($doctor) {
+            // Yeni bir kullanıcı oluşturun ve şifreyi hash'leyin
+            $user = new User([
+                'email' => $doctor->email,
+                'password' => Hash::make($doctor->password),
+                'user_type' => 'doctor',
+            ]);
+
+            // Kullanıcıyı kaydedin ve doktorun user_id alanını güncelleyin
+            $user->save();
+            $doctor->user_id = $user->id;
+        });
+    }
 
     public function user()
     {

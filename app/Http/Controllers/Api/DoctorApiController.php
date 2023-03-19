@@ -8,6 +8,7 @@ use App\Http\Resources\DoctorResource;
 use App\Http\Resources\PatientResource;
 use App\Models\Doctor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class DoctorApiController extends Controller
 {
