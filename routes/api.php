@@ -1,4 +1,9 @@
 <?php
+
+use App\Http\Controllers\Api\AddressApiController;
+use App\Http\Controllers\Api\MediaApiController;
+use App\Http\Controllers\Api\PhoneApiController;
+use App\Http\Controllers\Api\SpecialtyApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\DoctorApiController;
 use App\Http\Controllers\Api\PatientApiController;
@@ -29,4 +34,9 @@ Route::middleware('api')->group(function () {
 
     Route::apiResource('blogs', BlogApiController::class);
     Route::get('blogs/{blog}/comments', [BlogApiController::class, 'comments']);
+
+    Route::apiResource('specialties', SpecialtyApiController::class);
+    Route::apiResource('addresses', AddressApiController::class);
+    Route::apiResource('phones', PhoneApiController::class);
+    Route::apiResource('media', MediaApiController::class);
 });
