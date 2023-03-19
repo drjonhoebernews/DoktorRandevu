@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AddressApiController;
+use App\Http\Controllers\Api\DoctorsdataController;
 use App\Http\Controllers\Api\MediaApiController;
 use App\Http\Controllers\Api\PhoneApiController;
 use App\Http\Controllers\Api\SpecialtyApiController;
@@ -39,4 +40,10 @@ Route::middleware('api')->group(function () {
     Route::apiResource('addresses', AddressApiController::class);
     Route::apiResource('phones', PhoneApiController::class);
     Route::apiResource('media', MediaApiController::class);
+
+    Route::get('/doctorsdata', [DoctorsdataController::class, 'index']);
+    Route::get('/doctorsdata/{doctor}', [DoctorsdataController::class, 'show']);
+    Route::post('/doctorsdata', [DoctorsdataController::class, 'store']);
+    Route::put('/doctorsdata/{doctor}', [DoctorsdataController::class, 'update']);
+    Route::delete('/doctorsdata/{doctor}', [DoctorsdataController::class, 'delete']);
 });
