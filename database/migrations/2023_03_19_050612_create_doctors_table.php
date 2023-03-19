@@ -23,7 +23,6 @@ return new class extends Migration
             $table->integer('likes')->default(0);
             $table->integer('dislikes')->default(0);
             $table->timestamps();
-            $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('hospital_id')->references('id')->on('hospitals')->onDelete('cascade');
