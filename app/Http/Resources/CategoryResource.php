@@ -18,7 +18,7 @@ class CategoryResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'blogs' => BlogResource::collection($this->whenLoaded('blogs')),
-            // Diğer alanları buraya ekleyin
+            // Diğer alanları buraya ekleyin ekliyoruz
         ];
     }
 }
