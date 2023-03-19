@@ -16,11 +16,18 @@ class DoctorResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'first_name' => $this->first_name,
-            'last_name' => $this->last_name,
-            'hospitals' => HospitalResource::collection($this->whenLoaded('hospitals')),
-            'departments' => DepartmentResource::collection($this->whenLoaded('departments')),
-            // Diğer alanları buraya ekleyin
+            'user' => new UserResource($this->user),
+            'hospital' => new HospitalResource($this->hospital),
+            'specialties' => SpecialtyResource::collection($this->specialties),
+            'departments' => DepartmentResource::collection($this->departments),
+            'addresses' => AddressResource::collection($this->addresses),
+            'phones' => PhoneResource::collection($this->phones),
+            'media' => MediaResource::collection($this->media),
+            'type' => $this->type,
+            'likes' => $this->likes,
+            'dislikes' => $this->dislikes,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }
