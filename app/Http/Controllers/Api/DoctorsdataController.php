@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Doctorsdata;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class DoctorsdataController extends Controller
 {
@@ -23,6 +24,20 @@ class DoctorsdataController extends Controller
 
     public function store(Request $request)
     {
+
+        $validator = Validator::make($request->all(), [
+
+            'adinfo' => 'required',
+            'uzmanlik' => 'required',
+            'ilinfo' => 'required',
+            'klinik' => 'required',
+            'address' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+
         $doctor = Doctorsdata::create($request->all());
         return response()->json($doctor, 201);
     }

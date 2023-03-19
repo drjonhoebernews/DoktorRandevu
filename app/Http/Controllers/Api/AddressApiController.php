@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\AddressResource;
+use App\Models\Address;
 use Illuminate\Http\Request;
 
 class AddressApiController extends Controller
