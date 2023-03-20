@@ -9,10 +9,23 @@
     width: 100%;
 }
 
+/* Sticky sidebar */
 .sticky-sidebar {
     position: -webkit-sticky;
     position: sticky;
+    top: 20px; /* İstediğiniz boşluğu ayarlayın */
+}
+
+/* Z-index sorunlarını önlemek için */
+.sticky-sidebar::before {
+    content: "";
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: inherit;
 }
 
 // Mobil boyutlar

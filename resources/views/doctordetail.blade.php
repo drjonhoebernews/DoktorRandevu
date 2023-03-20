@@ -386,6 +386,23 @@
     </section>
 @endsection
 @section('js')
+    <script>
+        $(document).ready(function () {
+            var sidebar = $('.sticky-sidebar');
+            var sidebarOffset = sidebar.offset().top;
+
+            $(window).scroll(function () {
+                var windowTop = $(window).scrollTop();
+
+                if (windowTop > sidebarOffset) {
+                    sidebar.css({ position: 'fixed', top: '20px' });
+                } else {
+                    sidebar.css('position', 'static');
+                }
+            });
+        });
+    </script>
+
     <script src="/assets/js/timePicker.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
 
