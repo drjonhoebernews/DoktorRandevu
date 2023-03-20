@@ -465,6 +465,7 @@ img {
     top: 0px;
     z-index: 999;
     width: 100%;
+    height: 90px;
     transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -1451,8 +1452,8 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 70px;
                     background: #fff;
-                    border-radius: 40px;
-                    padding: 10px 90px 10px 30px;
+                    border-radius: 10px;
+                    padding: 10px 90px 10px 10px;
                     font-size: 16px;
                     color: #848484;
                     border: 1px solid #fff;
@@ -1477,7 +1478,7 @@ div#mCSB_1_container {
                     height: 60px;
                     line-height: 60px;
                     text-align: center;
-                    border-radius: 50%;
+                    border-radius: 10%;
                     font-size: 18px;
                     color: #fff;
                     cursor: pointer;
@@ -3340,7 +3341,7 @@ div#mCSB_1_container {
             width: 200px;
             height: 200px;
             background: #fff;
-            border-radius: 70px;
+            border-radius: 10px;
             line-height: 200px;
             text-align: center;
             margin-bottom: 33px;
@@ -3709,7 +3710,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 70px;
+        border-radius: 10px;
         padding: 40px 15px;
         margin-bottom: 30px;
         overflow: hidden;
@@ -3942,7 +3943,7 @@ div#mCSB_1_container {
         overflow: hidden;
         background: #fff;
         box-shadow: 0 20px 30px rgba(0, 24, 73, 0.1);
-        border-radius: 20px;
+        border-radius: 10px;
         .image-box {
             position: relative;
             display: block;
@@ -3962,7 +3963,7 @@ div#mCSB_1_container {
                 line-height: 40px;
                 text-align: center;
                 background: #eaf8f6;
-                border-radius: 50%;
+                border-radius: 5%;
                 z-index: 1;
                 &:hover {
                     background: #061a3a;
@@ -5469,8 +5470,8 @@ div#mCSB_1_container {
             .nice-select {
                 height: 50px;
                 border: 1px solid #e5e7ec !important;
-                border-radius: 30px;
-                padding: 6px 30px;
+                border-radius: 5px;
+                padding: 6px 1px 6px 6px;
                 font-size: 15px;
                 font-weight: 500;
                 &:after {
@@ -5505,27 +5506,27 @@ div#mCSB_1_container {
         overflow: hidden;
         background: #fff;
         border-radius: 10px;
-        padding: 35px 40px 31px 170px;
-        margin-bottom: 30px;
+        padding: 20px 12px 50px 150px;
+        margin-bottom: 15px;
         box-shadow: 0 15px 40px 10px #edf1f1;
         .image-box {
             position: absolute;
-            left: 40px;
-            top: 40px;
+            left: 20px;
+            top: 25px;
             width: 100px;
             height: 100px;
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
             img {
                 width: 100%;
-                border-radius: 20px;
+                border-radius: 10px;
             }
         }
         .content-box {
             .like-box {
                 position: absolute;
-                top: 3px;
-                right: 3px;
+                top: 10px;
+                right: 10px;
                 a {
                     position: relative;
                     display: inline-block;
@@ -5643,8 +5644,8 @@ div#mCSB_1_container {
             }
             .btn-box {
                 position: absolute;
-                right: 40px;
-                bottom: 40px;
+                right: 10px;
+                bottom: 10px;
                 a {
                     position: relative;
                     display: inline-block;
@@ -5652,7 +5653,7 @@ div#mCSB_1_container {
                     line-height: 26px;
                     font-weight: 600;
                     border: 2px solid #ebeef1;
-                    border-radius: 30px;
+                    border-radius: 5px;
                     padding: 7px 30px;
                     &:hover {
                         color: #fff;
@@ -5781,9 +5782,9 @@ div#mCSB_1_container {
                 width: 190px;
                 height: 220px;
             }
-            padding: 34px 40px 37px 260px;
+            padding: 40px 34px 38px 225px;
             box-shadow: none;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             h2 {
                 font-size: 30px;
                 line-height: 38px;
@@ -7952,7 +7953,7 @@ div#mCSB_1_container {
                 .nice-select {
                     height: 44px;
                     border: 1px solid #e5eded !important;
-                    border-radius: 30px;
+                    border-radius: 5px;
                     padding: 3px 20px;
                     width: 175px;
                     color: #061a3a;

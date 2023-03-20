@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="boxed_wrapper">
-{{--        <div class="preloader"></div>--}}
+        <div class="preloader"></div>
         @include('partials.header')
 
         @yield('content')

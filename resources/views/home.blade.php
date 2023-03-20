@@ -25,7 +25,7 @@
                 <div class="form-inner">
                     <form action="{{route('main')}}" method="post">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Ex. Name, Specialization..." required="">
+                            <input type="text" name="name" placeholder="Doktor, bölüm veya kurum adı" required="">
                             <button type="submit"><i class="icon-Arrow-Right"></i></button>
                         </div>
                     </form>
@@ -33,19 +33,25 @@
                         <li>
                             <div class="single-checkbox">
                                 <input type="radio" name="check-box" id="check1" checked="">
-                                <label for="check1"><span></span>All</label>
+                                <label for="check1"><span></span>Tümü</label>
                             </div>
                         </li>
                         <li>
                             <div class="single-checkbox">
                                 <input type="radio" name="check-box" id="check2">
-                                <label for="check2"><span></span>Doctor</label>
+                                <label for="check2"><span></span>Doktor</label>
                             </div>
                         </li>
                         <li>
                             <div class="single-checkbox">
                                 <input type="radio" name="check-box" id="check3">
-                                <label for="check3"><span></span>Clinic</label>
+                                <label for="check3"><span></span>Bölüm</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-checkbox">
+                                <input type="radio" name="check-box" id="check4">
+                                <label for="check4"><span></span>Kurumlar</label>
                             </div>
                         </li>
                     </ul>

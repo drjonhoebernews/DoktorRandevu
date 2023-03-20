@@ -25,47 +25,47 @@
             </div>
         </div>
     </section>
-    <div class="select-field bg-color-3">
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="form-inner clearfix">
-                    <form action="index.html" method="post">
-                        <div class="form-group clearfix">
-                            <select class="wide">
-                                <option data-display="Select Location">Select Location</option>
-                                <option value="1">California</option>
-                                <option value="2">New York</option>
-                                <option value="3">Sun Francis</option>
-                                <option value="4">Shicago</option>
-                            </select>
-                            <input type="text" name="name" placeholder="Ex. Name, Specialization..." required="">
-                            <button type="submit"><i class="icon-Arrow-Right"></i></button>
-                        </div>
-                    </form>
-                    <ul class="select-box clearfix">
-                        <li>
-                            <div class="single-checkbox">
-                                <input type="radio" name="check-box" id="check1">
-                                <label for="check1"><span></span>All</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="single-checkbox">
-                                <input type="radio" name="check-box" id="check2" checked="">
-                                <label for="check2"><span></span>Doctor</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="single-checkbox">
-                                <input type="radio" name="check-box" id="check3">
-                                <label for="check3"><span></span>Clinic</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div class="select-field bg-color-3">--}}
+{{--        <div class="auto-container">--}}
+{{--            <div class="content-box">--}}
+{{--                <div class="form-inner clearfix">--}}
+{{--                    <form action="index.html" method="post">--}}
+{{--                        <div class="form-group clearfix">--}}
+{{--                            <select class="wide">--}}
+{{--                                <option data-display="Select Location">Select Location</option>--}}
+{{--                                <option value="1">California</option>--}}
+{{--                                <option value="2">New York</option>--}}
+{{--                                <option value="3">Sun Francis</option>--}}
+{{--                                <option value="4">Shicago</option>--}}
+{{--                            </select>--}}
+{{--                            <input type="text" name="name" placeholder="Ex. Name, Specialization..." required="">--}}
+{{--                            <button type="submit"><i class="icon-Arrow-Right"></i></button>--}}
+{{--                        </div>--}}
+{{--                    </form>--}}
+{{--                    <ul class="select-box clearfix">--}}
+{{--                        <li>--}}
+{{--                            <div class="single-checkbox">--}}
+{{--                                <input type="radio" name="check-box" id="check1">--}}
+{{--                                <label for="check1"><span></span>All</label>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="single-checkbox">--}}
+{{--                                <input type="radio" name="check-box" id="check2" checked="">--}}
+{{--                                <label for="check2"><span></span>Doctor</label>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="single-checkbox">--}}
+{{--                                <input type="radio" name="check-box" id="check3">--}}
+{{--                                <label for="check3"><span></span>Clinic</label>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <section class="clinic-section doctors-page-section">
         <div class="auto-container">
             <div class="row clearfix">
@@ -78,17 +78,17 @@
                             <div class="short-box clearfix">
                                 <div class="select-box">
                                     <select class="wide">
-                                        <option data-display="Sort by">Sort by</option>
+                                        <option data-display="Sırala">Sırala</option>
                                         <option value="1">Cardiology</option>
                                         <option value="2">Nurology</option>
                                         <option value="4">Pragnency</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="menu-box">
-                                <button class="list-view on"><i class="icon-List"></i></button>
-                                <button class="grid-view"><i class="icon-Grid"></i></button>
-                            </div>
+{{--                            <div class="menu-box">--}}
+{{--                                <button class="list-view on"><i class="icon-List"></i></button>--}}
+{{--                                <button class="grid-view"><i class="icon-Grid"></i></button>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                     <div class="wrapper list">

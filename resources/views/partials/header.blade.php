@@ -114,7 +114,7 @@
         <div class="auto-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <figure class="logo"><a href="index.html"><img src="/assets/images/small-logo.png" alt=""></a></figure>
+                    <figure class="logo"><a href="{{route('main')}}"><img src="/assets/images/small-logo.png" alt=""></a></figure>
                 </div>
                 <div class="menu-area">
                     <nav class="main-menu clearfix">
