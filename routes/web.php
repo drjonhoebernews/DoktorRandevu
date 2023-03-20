@@ -21,4 +21,4 @@ Auth::routes();
 
 Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get('uzman-listesi', [DoktorListesiController::class, 'index'])->name('uzman-listesi');
-Route::get('doktor/{id?}', [DoktorDetailController::class, 'index'])->name('doktor');
+Route::get('doktor/{id?}', [DoktorDetailController::class, 'show'])->name('doktor');

@@ -12,17 +12,17 @@
                 <div class="pattern-1" style="background-image: url(assets/images/shape/shape-70.png);"></div>
                 <div class="pattern-2" style="background-image: url(assets/images/shape/shape-71.png);"></div>
             </div>
-            <div class="auto-container">
-                <div class="title">
-                    <h1>Doctor Details</h1>
-                </div>
-            </div>
+{{--            <div class="auto-container">--}}
+{{--                <div class="title">--}}
+{{--                    <h1>Doctor Details</h1>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
         <div class="lower-content">
             <div class="auto-container">
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Doctor Details</li>
+                    <li><a href="{{route('uzman-listesi')}}">Doktor</a></li>
+                    <li>{{$oktorbul->adinfo}}</li>
                 </ul>
             </div>
         </div>
@@ -41,11 +41,11 @@
                                         <a href="doctors-details.html" class="share-btn"><i class="fas fa-share-alt"></i></a>
                                     </div>
                                     <ul class="name-box clearfix">
-                                        <li class="name"><h2>Dr. Agnes Ayres</h2></li>
+                                        <li class="name"><h2>{{$oktorbul->adinfo}}</h2></li>
                                         <li><i class="icon-Trust-1"></i></li>
                                         <li><i class="icon-Trust-2"></i></li>
                                     </ul>
-                                    <span class="designation">BDS, MDS - Oral & Maxillofacial Surgery</span>
+                                    <span class="designation">{{$oktorbul->uzmanlik}}</span>
                                     <div class="rating-box clearfix">
                                         <ul class="rating clearfix">
                                             <li><i class="icon-Star"></i></li>
