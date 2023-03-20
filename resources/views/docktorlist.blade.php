@@ -72,7 +72,7 @@
                 <div class="col-lg-8 col-md-12 col-sm-12 content-side">
                     <div class="item-shorting clearfix">
                         <div class="left-column pull-left">
-                            <h3>Showing 1-6 of 20 Results</h3>
+                            <h3>Toplam {{count($liste)}} adet gösteriliyor</h3>
                         </div>
                         <div class="right-column pull-right clearfix">
                             <div class="short-box clearfix">
@@ -93,516 +93,83 @@
                     </div>
                     <div class="wrapper list">
                         <div class="clinic-list-content list-item">
-                            <div class="clinic-block-one">
-                                <div class="inner-box">
-                                    <div class="pattern">
-                                        <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                        <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
-                                    </div>
-                                    <figure class="image-box"><img src="assets/images/team/team-1.jpg" alt=""></figure>
-                                    <div class="content-box">
-                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                                        <ul class="name-box clearfix">
-                                            <li class="name"><h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3></li>
-                                            <li><i class="icon-Trust-1"></i></li>
-                                            <li><i class="icon-Trust-2"></i></li>
-                                        </ul>
-                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
-                                        <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
+                            @foreach($liste as $doktor)
+                                <div class="clinic-block-one">
+                                    <div class="inner-box">
+                                        <div class="pattern">
+                                            <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
+                                            <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
                                         </div>
-                                        <div class="rating-box clearfix">
-                                            <ul class="rating clearfix">
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><a href="doctors-details.html">(17)</a></li>
+                                        <figure class="image-box"><img src="assets/images/team/team-1.jpg" alt=""></figure>
+                                        <div class="content-box">
+                                            <div class="like-box"><a href="{{route('doktor')}}"><i class="far fa-heart"></i></a></div>
+                                            <ul class="name-box clearfix">
+                                                <li class="name"><h3><a href="{{route('doktor',$doktor->id)}}">{{$doktor->adinfo}}</a></h3></li>
+                                                <li><i class="icon-Trust-1"></i></li>
+                                                <li><i class="icon-Trust-2"></i></li>
                                             </ul>
-                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
-                                        </div>
-                                        <div class="location-box">
-                                            <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                        </div>
-                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clinic-block-one">
-                                <div class="inner-box">
-                                    <div class="pattern">
-                                        <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                        <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
-                                    </div>
-                                    <figure class="image-box"><img src="assets/images/team/team-2.jpg" alt=""></figure>
-                                    <div class="content-box">
-                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                                        <ul class="name-box clearfix">
-                                            <li class="name"><h3><a href="doctors-details.html">Dr. Mary Astor</a></h3></li>
-                                            <li><i class="icon-Trust-1"></i></li>
-                                            <li><i class="icon-Trust-2"></i></li>
-                                        </ul>
-                                        <span class="designation">MDS - Periodontology and BDS</span>
-                                        <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
-                                        </div>
-                                        <div class="rating-box clearfix">
-                                            <ul class="rating clearfix">
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><a href="doctors-details.html">(21)</a></li>
-                                            </ul>
-                                            <div class="link not-available"><a href="doctors-details.html">Not Available</a></div>
-                                        </div>
-                                        <div class="location-box">
-                                            <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                        </div>
-                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clinic-block-one">
-                                <div class="inner-box">
-                                    <div class="pattern">
-                                        <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                        <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
-                                    </div>
-                                    <figure class="image-box"><img src="assets/images/team/team-3.jpg" alt=""></figure>
-                                    <div class="content-box">
-                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                                        <ul class="name-box clearfix">
-                                            <li class="name"><h3><a href="doctors-details.html">Dr. Rex Allen</a></h3></li>
-                                            <li><i class="icon-Trust-1"></i></li>
-                                            <li></li>
-                                        </ul>
-                                        <span class="designation">BDS, MDS - Oral & Maxillofacial Surgery</span>
-                                        <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
-                                        </div>
-                                        <div class="rating-box clearfix">
-                                            <ul class="rating clearfix">
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><a href="doctors-details.html">(32)</a></li>
-                                            </ul>
-                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
-                                        </div>
-                                        <div class="location-box">
-                                            <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                        </div>
-                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clinic-block-one">
-                                <div class="inner-box">
-                                    <div class="pattern">
-                                        <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                        <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
-                                    </div>
-                                    <figure class="image-box"><img src="assets/images/team/team-4.jpg" alt=""></figure>
-                                    <div class="content-box">
-                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                                        <ul class="name-box clearfix">
-                                            <li class="name"><h3><a href="doctors-details.html">Dr. Stella Adler</a></h3></li>
-                                            <li></li>
-                                            <li><i class="icon-Trust-2"></i></li>
-                                        </ul>
-                                        <span class="designation">MDS - Periodontology and BDS</span>
-                                        <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
-                                        </div>
-                                        <div class="rating-box clearfix">
-                                            <ul class="rating clearfix">
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><a href="doctors-details.html">(20)</a></li>
-                                            </ul>
-                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
-                                        </div>
-                                        <div class="location-box">
-                                            <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                        </div>
-                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clinic-block-one">
-                                <div class="inner-box">
-                                    <div class="pattern">
-                                        <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                        <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
-                                    </div>
-                                    <figure class="image-box"><img src="assets/images/team/team-19.jpg" alt=""></figure>
-                                    <div class="content-box">
-                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                                        <ul class="name-box clearfix">
-                                            <li class="name"><h3><a href="doctors-details.html">Dr. Leroy Anderson</a></h3></li>
-                                            <li><i class="icon-Trust-1"></i></li>
-                                            <li><i class="icon-Trust-2"></i></li>
-                                        </ul>
-                                        <span class="designation">BDS, MDS - Oral & Maxillofacial Surgery</span>
-                                        <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
-                                        </div>
-                                        <div class="rating-box clearfix">
-                                            <ul class="rating clearfix">
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><a href="doctors-details.html">(35)</a></li>
-                                            </ul>
-                                            <div class="link not-available"><a href="doctors-details.html">Not Available</a></div>
-                                        </div>
-                                        <div class="location-box">
-                                            <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                        </div>
-                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clinic-block-one">
-                                <div class="inner-box">
-                                    <div class="pattern">
-                                        <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                        <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
-                                    </div>
-                                    <figure class="image-box"><img src="assets/images/team/team-20.jpg" alt=""></figure>
-                                    <div class="content-box">
-                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
-                                        <ul class="name-box clearfix">
-                                            <li class="name"><h3><a href="doctors-details.html">Dr. Agnes Ayres</a></h3></li>
-                                            <li><i class="icon-Trust-1"></i></li>
-                                            <li></li>
-                                        </ul>
-                                        <span class="designation">BDS, MDS - Oral & Maxillofacial Surgery</span>
-                                        <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
-                                        </div>
-                                        <div class="rating-box clearfix">
-                                            <ul class="rating clearfix">
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><i class="icon-Star"></i></li>
-                                                <li><a href="doctors-details.html">(35)</a></li>
-                                            </ul>
-                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
-                                        </div>
-                                        <div class="location-box">
-                                            <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                        </div>
-                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clinic-grid-content">
-                            <div class="row clearfix">
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-5.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Mary Astor</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">MDS - Periodontology and BDS</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(32)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text">24/7 Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
+                                            <span class="designation">{{$doktor->uzmanlik}}</span>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-6.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Rex Allen</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
+                                            <div class="rating-box clearfix">
+                                                <ul class="rating clearfix">
+                                                    <li><i class="icon-Star"></i></li>
+                                                    <li><i class="icon-Star"></i></li>
+                                                    <li><i class="icon-Star"></i></li>
+                                                    <li><i class="icon-Star"></i></li>
+                                                    <li><i class="icon-Star"></i></li>
+                                                    <li><a href="doctors-details.html">(17)</a></li>
                                                 </ul>
-                                                <span class="designation">BDS, MDS - Oral & Maxillofacial Surgery</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(17)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text not-available">Not Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
+                                                <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
                                             </div>
+                                            <div class="location-box">
+                                                <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
+                                            </div>
+                                            <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-7.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Leroy Anderson</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">MDS - Periodontology and BDS</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(25)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text">24/7 Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-8.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Agnes Ayres</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">BDS, MDS - Oral & Maxillofacial Surgery</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(10)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text">24/7 Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-9.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(17)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text not-available">Not Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-9.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Terry Bradshaw</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(30)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text">24/7 Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-10.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Richard Branson</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(12)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text">24/7 Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 team-block">
-                                    <div class="team-block-three">
-                                        <div class="inner-box">
-                                            <figure class="image-box">
-                                                <img src="assets/images/team/team-11.jpg" alt="">
-                                                <a href="doctors-details.html"><i class="far fa-heart"></i></a>
-                                            </figure>
-                                            <div class="lower-content">
-                                                <ul class="name-box clearfix">
-                                                    <li class="name"><h3><a href="doctors-details.html">Dr. Stella Adler</a></h3></li>
-                                                    <li><i class="icon-Trust-1"></i></li>
-                                                    <li><i class="icon-Trust-2"></i></li>
-                                                </ul>
-                                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
-                                                <div class="rating-box clearfix">
-                                                    <ul class="rating clearfix">
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><i class="icon-Star"></i></li>
-                                                        <li><a href="doctors-details.html">(05)</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="location-box">
-                                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
-                                                </div>
-                                                <div class="lower-box clearfix">
-                                                    <span class="text not-available">Not Available</span>
-                                                    <a href="doctors-details.html">Book Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <div class="pagination-wrapper">
                         <ul class="pagination">
-                            <li><a href="clinic-1.html" class="current">1</a></li>
-                            <li><a href="clinic-1.html">2</a></li>
-                            <li><a href="clinic-1.html">3</a></li>
-                            <li><a href="clinic-1.html"><i class="icon-Arrow-Right"></i></a></li>
+                            {{-- Previous Page Link --}}
+                            @if ($liste->onFirstPage())
+                                <li class="disabled"><span>&laquo;</span></li>
+                            @else
+                                <li><a href="{{ $liste->previousPageUrl() }}" rel="prev">&laquo;</a></li>
+                            @endif
+
+                            {{-- Pagination Elements --}}
+                            @foreach ($liste->links()->elements as $element)
+                                {{-- "Three Dots" Separator --}}
+                                @if (is_string($element))
+                                    <li class="disabled"><span>{{ $element }}</span></li>
+                                @endif
+
+                                {{-- Array Of Links --}}
+                                @if (is_array($element))
+                                    @foreach ($element as $page => $url)
+                                        @if ($page == $liste->currentPage())
+                                            <li class="active"><span>{{ $page }}</span></li>
+                                        @else
+                                            <li><a href="{{ $url }}">{{ $page }}</a></li>
+                                        @endif
+                                    @endforeach
+                                @endif
+                            @endforeach
+
+                            {{-- Next Page Link --}}
+                            @if ($liste->hasMorePages())
+                                <li><a href="{{ $liste->nextPageUrl() }}" rel="next">&raquo;</a></li>
+                            @else
+                                <li class="disabled"><span>&raquo;</span></li>
+                            @endif
                         </ul>
                     </div>
+
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
                     <div class="map-inner ml-10">

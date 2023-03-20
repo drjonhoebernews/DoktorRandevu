@@ -14,7 +14,7 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="dropdown"><a href="{{route('uzman-listesi')}}">Uzmanlar</a>
+                                <li><a href="{{route('uzman-listesi')}}">Uzmanlar</a>
                                 </li>
                                 <li class="dropdown"><a href="index.html">Patients</a>
                                     <ul>
