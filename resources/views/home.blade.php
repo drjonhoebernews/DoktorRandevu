@@ -26,7 +26,7 @@
                     <form action="{{route('main')}}" method="post">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Doktor, bölüm veya kurum adı" required="">
-                            <button type="submit"><i class="icon-Arrow-Right"></i></button>
+                            <button type="submit"><i class="fas fa-search-location fa-1x"></i></button>
                         </div>
                     </form>
                     <ul class="select-box clearfix">

@@ -106,7 +106,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="btn-box"><a href="register-page.html" class="theme-btn-one"><i class="icon-image"></i>Join Now</a></div>
+                <div class="btn-box"><a href="#" class="theme-btn-one"><i class="fas fa-user-check"></i>Giriş yap</a></div>
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
                     <nav class="main-menu clearfix">
                     </nav>
                 </div>
-                <div class="btn-box"><a href="register-page.html" class="theme-btn-one"><i class="icon-image"></i>Join Now</a></div>
+                <div class="btn-box"><a href="#" class="theme-btn-one"><i class="fas fa-user-check"></i>Giriş yap</a></div>
             </div>
         </div>
     </div>

@@ -9,10 +9,12 @@
     <section class="page-title-two">
         <div class="lower-content">
             <div class="auto-container">
-                <ul class="bread-crumb clearfix">
-                    <li><a href="{{route('uzman-listesi')}}">Doktor</a></li>
-                    <li>{{$doktorbul->adinfo}}</li>
-                </ul>
+                <div class="bread-crumb-top">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{{route('uzman-listesi')}}">Doktor</a></li>
+                        <li>{{$doktorbul->adinfo}}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

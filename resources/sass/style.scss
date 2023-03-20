@@ -145,7 +145,7 @@ body {
     color: #808080;
     line-height: 28px;
     font-weight: 400;
-    background: #ffffff;
+    background: #f3f3f3;
     font-family: 'Poppins', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
@@ -552,7 +552,7 @@ img {
     position: fixed;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: #f3f3f3;
     left: 0px;
     top: 0px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -2165,7 +2165,7 @@ div#mCSB_1_container {
     }
 }
 .bg-color-3 {
-    background: #ebf7f6;
+    background: #f3f3f3;
 }
 .team-section {
     position: relative;
@@ -4863,6 +4863,12 @@ div#mCSB_1_container {
             color: #fff;
         }
     }
+    .bread-crumb-top {
+        background-color: white;
+        //box-shadow: 1px 1px 7px 3px #dbdbdb;
+        padding: 10px;
+        border-radius: 5px;
+    }
     .bread-crumb {
         li {
             position: relative;
@@ -4918,7 +4924,7 @@ div#mCSB_1_container {
     .lower-content {
         padding: 0px 0px;
         padding: 0px 50px;
-        background-color: #ffffff;
+        background-color: #f3f3f3;
         margin-top: 10px;
     }
 }
@@ -5425,6 +5431,12 @@ div#mCSB_1_container {
 .clinic-section {
     position: relative;
     padding: 80px 0px 120px 0px;
+    .bread-crumb-top {
+        background-color: white;
+        //box-shadow: 1px 1px 7px 3px #dbdbdb;
+        padding: 10px;
+        border-radius: 5px;
+    }
     .item-shorting {
         position: relative;
         margin-bottom: 40px;
@@ -5508,7 +5520,7 @@ div#mCSB_1_container {
         border-radius: 10px;
         padding: 20px 12px 50px 150px;
         margin-bottom: 15px;
-        box-shadow: 0 15px 40px 10px #edf1f1;
+        //box-shadow: 1px 1px 7px 3px #dbdbdb;
         .image-box {
             position: absolute;
             left: 20px;
@@ -5516,7 +5528,7 @@ div#mCSB_1_container {
             width: 100px;
             height: 100px;
             border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
+            box-shadow: 0px 0px 7px 3px rgba(0, 24, 73, 0.2);
             img {
                 width: 100%;
                 border-radius: 10px;
