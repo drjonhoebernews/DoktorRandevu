@@ -14,7 +14,7 @@ use App\Http\Controllers\Api\DepartmentApiController;
 use App\Http\Controllers\Api\CategoryApiController;
 use App\Http\Controllers\Api\BlogApiController;
 
-Route::middleware('api')->group(function () {
+Route::middleware(['api', 'throttle:120,1'])->group(function () {
     Route::apiResource('doctors', DoctorApiController::class);
     Route::get('doctors/{doctor}/patients', [DoctorApiController::class, 'patients']);
     Route::get('doctors/{doctor}/appointments', [DoctorApiController::class, 'appointments']);
