@@ -331,7 +331,7 @@ img {
     padding: 17px 40px;
     border-radius: 5px;
     z-index: 1;
-    box-shadow: 0 20px 30px #d5edea;
+    //box-shadow: 0 20px 30px #d5edea;
     transition: all 500ms ease;
     i {
         position: relative;
@@ -4918,7 +4918,7 @@ div#mCSB_1_container {
     .lower-content {
         padding: 0px 0px;
         padding: 0px 50px;
-        background-color: #ebf7f6;
+        background-color: #ffffff;
         margin-top: 10px;
     }
 }
@@ -5512,10 +5512,10 @@ div#mCSB_1_container {
         .image-box {
             position: absolute;
             left: 20px;
-            top: 25px;
+            top: 35px;
             width: 100px;
             height: 100px;
-            border-radius: 20px;
+            border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0, 24, 73, 0.2);
             img {
                 width: 100%;
@@ -5775,14 +5775,14 @@ div#mCSB_1_container {
 }
 .clinic-details-content {
     position: relative;
-    margin-right: 10px;
+    margin-right: -20px;
     .clinic-block-one {
         .inner-box {
             .image-box {
                 width: 190px;
-                height: 220px;
+                height: 245px;
             }
-            padding: 40px 34px 38px 225px;
+            padding: 55px 35px 38px 225px;
             box-shadow: none;
             margin-bottom: 10px;
             h2 {
@@ -5846,8 +5846,8 @@ div#mCSB_1_container {
                 }
                 .share-box {
                     position: absolute;
-                    top: 3px;
-                    right: 48px;
+                    top: 10px;
+                    right: 55px;
                     a.share-btn {
                         position: relative;
                         display: inline-block;

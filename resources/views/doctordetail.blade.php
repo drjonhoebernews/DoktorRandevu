@@ -49,7 +49,7 @@
 {{--                                        <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>--}}
 {{--                                    </div>--}}
                                     <div class="mb-3">
-                                        <button class="btn btn-primary btn-block"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
+                                        <button class="theme-btn-one btn-block"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
                                     </div>
                                     <div class="lower-box clearfix">
                                         <button class="btn btn-secondary left mr-2"><i class="fas fa-phone-square"></i> Telefon</button>
