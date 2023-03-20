@@ -325,16 +325,7 @@
                                 <p>Monday to Friday: 09:00Am-05:00PM</p>
                             </div>
                             <div class="form-inner">
-                                <div class="appointment-time">
-                                    <div class="form-group">
-                                        <input type="text" name="date" placeholder="07/08/2020" id="datepicker">
-                                        <i class="fas fa-calendar-alt"></i>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="time" placeholder="Any Time">
-                                        <i class="far fa-clock"></i>
-                                    </div>
-                                </div>
+                                <div id="calendar-container"></div>
                                 <div class="choose-service">
                                     <h4>Choose Service</h4>
                                     <div class="custom-check-box">
@@ -391,6 +382,10 @@
 
     <script src="/assets/js/timePicker.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- jQuery Timepicker Addon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
 
     <!-- map script -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
