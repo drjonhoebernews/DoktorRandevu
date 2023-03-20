@@ -405,7 +405,7 @@
                 var sidebarOffset = sidebarParent.offset().top;
                 var footerOffset = $('.main-footer').offset().top;
                 var sidebarHeight = sidebar.outerHeight(true);
-                var stopPosition = footerOffset - sidebarHeight - 20;
+                var stopPosition = footerOffset - sidebarHeight - 100;
                 var sidebarWidth = sidebarParent.width();
 
                 if (window.matchMedia('(min-width: 768px)').matches) {
