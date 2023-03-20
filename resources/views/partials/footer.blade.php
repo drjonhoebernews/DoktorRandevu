@@ -76,7 +76,7 @@
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="inner-box clearfix">
-                <div class="copyright pull-left"><p><a href="index.html">Docpro</a> &copy; 2020 All Right Reserved</p></div>
+                <div class="copyright pull-left"><p><a href="{{route('main')}}">DOKTOR BİLGİNİ</a> &copy; 2017 - 2022 Tüm hakları saklıdır.</p></div>
                 <ul class="footer-nav pull-right clearfix">
                     <li><a href="index.html">Terms of Service</a></li>
                     <li><a href="index.html">Privacy Policy</a></li>
