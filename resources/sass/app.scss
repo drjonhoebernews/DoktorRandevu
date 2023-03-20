@@ -9,10 +9,10 @@
 @import "bootsrap";
 
 // Animate
-@import "animate.scss";
+@import "animate";
 
 //color
-@import "color.scss";
+@import "color";
 
 //flaticons
 @import "flaticon";
@@ -36,7 +36,10 @@
 @import "nice-select";
 
 // owl css
-@import "owl.scss";
+@import "owl";
 
 // style
-@import "style.scss";
+@import "style";
+
+//responsive
+@import "responsive";
