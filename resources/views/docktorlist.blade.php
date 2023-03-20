@@ -7,8 +7,8 @@
     <section class="page-title-two">
         <div class="title-box centred bg-color-2">
             <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-70.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-71.png);"></div>
+                <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-70.png);"></div>
+                <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-71.png);"></div>
             </div>
             <div class="auto-container">
                 <div class="title">
@@ -97,10 +97,10 @@
                                 <div class="clinic-block-one">
                                     <div class="inner-box">
                                         <div class="pattern">
-                                            <div class="pattern-1" style="background-image: url(assets/images/shape/shape-24.png);"></div>
-                                            <div class="pattern-2" style="background-image: url(assets/images/shape/shape-25.png);"></div>
+                                            <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-24.png);"></div>
+                                            <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-25.png);"></div>
                                         </div>
-                                        <figure class="image-box"><img src="assets/images/team/team-1.jpg" alt=""></figure>
+                                        <figure class="image-box"><img src="/assets/images/team/team-1.jpg" alt=""></figure>
                                         <div class="content-box">
                                             <div class="like-box"><a href="{{route('doktor')}}"><i class="far fa-heart"></i></a></div>
                                             <ul class="name-box clearfix">
@@ -178,11 +178,11 @@
                             id="contact-google-map"
                             data-map-lat="40.712776"
                             data-map-lng="-74.005974"
-                            data-icon-path="assets/images/icons/map-marker.png"
+                            data-icon-path="/assets/images/icons/map-marker.png"
                             data-map-title="Brooklyn, New York, United Kingdom"
                             data-map-zoom="12"
                             data-markers='{
-                                    "marker-1": [40.712776, -74.005974, "<h4>Branch Office</h4><p>77/99 New York</p>","assets/images/icons/map-marker.png"]
+                                    "marker-1": [40.712776, -74.005974, "<h4>Branch Office</h4><p>77/99 New York</p>","/assets/images/icons/map-marker.png"]
                                 }'>
 
                         </div>

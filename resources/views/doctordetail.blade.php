@@ -9,8 +9,8 @@
     <section class="page-title-two">
 {{--        <div class="title-box centred bg-color-2">--}}
 {{--            <div class="pattern-layer">--}}
-{{--                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-70.png);"></div>--}}
-{{--                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-71.png);"></div>--}}
+{{--                <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-70.png);"></div>--}}
+{{--                <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-71.png);"></div>--}}
 {{--            </div>--}}
 {{--            <div class="auto-container">--}}
 {{--                <div class="title">--}}
@@ -34,7 +34,7 @@
                     <div class="clinic-details-content doctor-details-content">
                         <div class="clinic-block-one">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="assets/images/team/team-33.jpg" alt=""></figure>
+                                <figure class="image-box"><img src="/assets/images/team/team-33.jpg" alt=""></figure>
                                 <div class="content-box">
                                     <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"></i></a></div>
                                     <div class="share-box">
@@ -203,11 +203,11 @@
                                                 id="contact-google-map"
                                                 data-map-lat="40.712776"
                                                 data-map-lng="-74.005974"
-                                                data-icon-path="assets/images/icons/map-marker.png"
+                                                data-icon-path="/assets/images/icons/map-marker.png"
                                                 data-map-title="Brooklyn, New York, United Kingdom"
                                                 data-map-zoom="12"
                                                 data-markers='{
-                                                        "marker-1": [40.712776, -74.005974, "<h4>Branch Office</h4><p>77/99 New York</p>","assets/images/icons/map-marker.png"]
+                                                        "marker-1": [40.712776, -74.005974, "<h4>Branch Office</h4><p>77/99 New York</p>","/assets/images/icons/map-marker.png"]
                                                     }'>
 
                                             </div>
@@ -259,7 +259,7 @@
                                         </div>
                                         <div class="review-inner">
                                             <div class="single-review-box">
-                                                <figure class="image-box"><img src="assets/images/resource/review-1.jpg" alt=""></figure>
+                                                <figure class="image-box"><img src="/assets/images/resource/review-1.jpg" alt=""></figure>
                                                 <ul class="rating clearfix">
                                                     <li><i class="icon-Star"></i></li>
                                                     <li><i class="icon-Star"></i></li>
@@ -271,7 +271,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
                                             </div>
                                             <div class="single-review-box">
-                                                <figure class="image-box"><img src="assets/images/resource/review-2.jpg" alt=""></figure>
+                                                <figure class="image-box"><img src="/assets/images/resource/review-2.jpg" alt=""></figure>
                                                 <ul class="rating clearfix">
                                                     <li><i class="icon-Star"></i></li>
                                                     <li><i class="icon-Star"></i></li>
@@ -283,7 +283,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
                                             </div>
                                             <div class="single-review-box">
-                                                <figure class="image-box"><img src="assets/images/resource/review-3.jpg" alt=""></figure>
+                                                <figure class="image-box"><img src="/assets/images/resource/review-3.jpg" alt=""></figure>
                                                 <ul class="rating clearfix">
                                                     <li><i class="icon-Star"></i></li>
                                                     <li><i class="icon-Star"></i></li>
@@ -295,7 +295,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
                                             </div>
                                             <div class="single-review-box">
-                                                <figure class="image-box"><img src="assets/images/resource/review-4.jpg" alt=""></figure>
+                                                <figure class="image-box"><img src="/assets/images/resource/review-4.jpg" alt=""></figure>
                                                 <ul class="rating clearfix">
                                                     <li><i class="icon-Star"></i></li>
                                                     <li><i class="icon-Star"></i></li>
@@ -307,7 +307,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing sed eiusmod tempor incididunt labore dolore magna aliqua enim.</p>
                                             </div>
                                             <div class="single-review-box">
-                                                <figure class="image-box"><img src="assets/images/resource/review-5.jpg" alt=""></figure>
+                                                <figure class="image-box"><img src="/assets/images/resource/review-5.jpg" alt=""></figure>
                                                 <ul class="rating clearfix">
                                                     <li><i class="icon-Star"></i></li>
                                                     <li><i class="icon-Star"></i></li>
@@ -397,11 +397,11 @@
     </section>
 @endsection
 @section('js')
-    <script src="assets/js/timePicker.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
+    <script src="/assets/js/timePicker.js"></script>
+    <script src="/assets/js/jquery-ui.js"></script>
 
     <!-- map script -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
-    <script src="assets/js/gmaps.js"></script>
-    <script src="assets/js/map-helper.js"></script>
+    <script src="/assets/js/gmaps.js"></script>
+    <script src="/assets/js/map-helper.js"></script>
 @endsection

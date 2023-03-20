@@ -1,15 +1,15 @@
 <footer class="main-footer">
     <div class="footer-top">
         <div class="pattern-layer">
-            <div class="pattern-1" style="background-image: url(assets/images/shape/shape-30.png);"></div>
-            <div class="pattern-2" style="background-image: url(assets/images/shape/shape-31.png);"></div>
+            <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-30.png);"></div>
+            <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-31.png);"></div>
         </div>
         <div class="auto-container">
             <div class="widget-section">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                         <div class="footer-widget logo-widget">
-                            <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a></figure>
+                            <figure class="footer-logo"><a href="index.html"><img src="/assets/images/footer-logo.png" alt=""></a></figure>
                             <div class="text">
                                 <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .</p>
                             </div>
