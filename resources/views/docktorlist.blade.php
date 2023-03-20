@@ -5,21 +5,21 @@
 @endsection
 @section('content')
     <section class="page-title-two">
-        <div class="title-box centred bg-color-2">
-            <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-70.png);"></div>
-                <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-71.png);"></div>
-            </div>
-            <div class="auto-container">
-                <div class="title">
-                    <h1>Doctors List</h1>
-                </div>
-            </div>
-        </div>
+{{--        <div class="title-box centred bg-color-2">--}}
+{{--            <div class="pattern-layer">--}}
+{{--                <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-70.png);"></div>--}}
+{{--                <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-71.png);"></div>--}}
+{{--            </div>--}}
+{{--            <div class="auto-container">--}}
+{{--                <div class="title">--}}
+{{--                    <h1>Doctors List</h1>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <div class="lower-content">
             <div class="auto-container">
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Doktor</a></li>
                     <li>Doctors List</li>
                 </ul>
             </div>
