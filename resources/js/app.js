@@ -1,1 +1,23 @@
 import './bootstrap';
+
+import './appear';
+import './gmaps';
+import './isotope';
+import './jquery.fancybox';
+import './jquery';
+import './jquery.nice-select.min';
+import './jquery.paroller.min';
+import './jquery-ui';
+import './live-chat';
+import './map-helper';
+import './monthly';
+import './owl';
+import './pagenav';
+import './popper.min';
+import './product-filter';
+import './script';
+import './scrollbar';
+import './tilt.jquery';
+import './timePicker';
+import './validation';
+import './wow';
