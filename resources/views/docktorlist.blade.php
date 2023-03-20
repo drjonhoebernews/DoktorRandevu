@@ -124,9 +124,9 @@
                                                 <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
                                             </div>
                                             <div class="location-box">
-                                                <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
+                                                <p><i class="fas fa-map-marker-alt"></i>{{$doktor->address}}</p>
                                             </div>
-                                            <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                            <div class="btn-box"><a href="doctors-details.html">RANDEVU</a></div>
                                         </div>
                                     </div>
                                 </div>

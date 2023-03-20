@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="lower-box clearfix">
                                         <ul class="info clearfix">
-                                            <li><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</li>
+                                            <li><i class="fas fa-map-marker-alt"></i>{{$oktorbul->address}}</li>
                                             <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
                                         </ul>
                                         <div class="view-map"><a href="doctors-details.html">View Map</a></div>
