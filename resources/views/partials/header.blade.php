@@ -3,7 +3,7 @@
         <div class="auto-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <figure class="logo"><a href="index.html"><img src="assets/images/logo-3.png" alt=""></a></figure>
+                    <figure class="logo"><a href="{{route('main')}}"><img src="assets/images/logo-3.png" alt=""></a></figure>
                 </div>
                 <div class="menu-area">
                     <div class="mobile-nav-toggler">
@@ -14,7 +14,7 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="index.html">Home</a>
+                                <li class="current dropdown"><a href="{{route('main')}}">Home</a>
                                     <ul>
                                         <li><a href="index.html">Home Page 01</a></li>
                                         <li><a href="index-2.html">Home Page 02</a></li>

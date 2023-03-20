@@ -23,7 +23,7 @@
                 <h1>Find Nearest Doctor.</h1>
                 <p>Amet consectetur adipisicing elit sed do eiusmod.</p>
                 <div class="form-inner">
-                    <form action="index.html" method="post">
+                    <form action="{{route('main')}}" method="post">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Ex. Name, Specialization..." required="">
                             <button type="submit"><i class="icon-Arrow-Right"></i></button>
