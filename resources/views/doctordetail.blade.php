@@ -59,12 +59,34 @@
 {{--                                    <div class="text">--}}
 {{--                                        <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>--}}
 {{--                                    </div>--}}
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary btn-block"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
+                                    </div>
+                                    <style>
+                                        .lower-box {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                        }
+                                        /* Masüstü boyutlar */
+                                        .left {
+                                            float: left;
+                                            width: 100%;
+                                        }
+
+                                        /* Mobil boyutlar */
+                                        @media (max-width: 767px) {
+                                            .left {
+                                                float: none;
+                                                width: 100%;
+                                                margin-bottom: 10px;
+                                            }
+                                        }
+                                    </style>
+
                                     <div class="lower-box clearfix">
-                                        <ul class="info clearfix">
-                                            <li><i class="fas fa-map-marker-alt"></i>{{$doktorbul->address}}</li>
-                                            <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
-                                        </ul>
-                                        <div class="view-map"><a href="doctors-details.html">View Map</a></div>
+                                        <button class="btn btn-secondary left mr-2"><i class="fas fa-phone-square"></i> Telefon</button>
+                                        <button class="btn btn-secondary left"><i class="fas fa-question-square"></i> BİLGİ AL</button>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +236,7 @@
                                         </div>
                                         <h4>New Apollo Hospital:</h4>
                                         <ul class="location-info clearfix">
-                                            <li><i class="fas fa-map-marker-alt"></i>369 San Miguel Dr Ste 200 Newport <br />Beach,CA,92660</li>
+                                            <li><i class="fas fa-map-marker-alt"></i>{{$doktorbul->address}}</li>
                                             <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
                                         </ul>
                                     </div>
