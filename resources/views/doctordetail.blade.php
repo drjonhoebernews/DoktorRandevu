@@ -41,11 +41,11 @@
                                         <a href="doctors-details.html" class="share-btn"><i class="fas fa-share-alt"></i></a>
                                     </div>
                                     <ul class="name-box clearfix">
-                                        <li class="name"><h2>{{$oktorbul->adinfo}}</h2></li>
+                                        <li class="name"><h2>{{$doktorbul->adinfo}}</h2></li>
                                         <li><i class="icon-Trust-1"></i></li>
                                         <li><i class="icon-Trust-2"></i></li>
                                     </ul>
-                                    <span class="designation">{{$oktorbul->uzmanlik}}</span>
+                                    <span class="designation">{{$doktorbul->uzmanlik}}</span>
                                     <div class="rating-box clearfix">
                                         <ul class="rating clearfix">
                                             <li><i class="icon-Star"></i></li>
@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="lower-box clearfix">
                                         <ul class="info clearfix">
-                                            <li><i class="fas fa-map-marker-alt"></i>{{$oktorbul->address}}</li>
+                                            <li><i class="fas fa-map-marker-alt"></i>{{$doktorbul->address}}</li>
                                             <li><i class="fas fa-phone"></i><a href="tel:2265458856">+(22) 65_458_856</a></li>
                                         </ul>
                                         <div class="view-map"><a href="doctors-details.html">View Map</a></div>
