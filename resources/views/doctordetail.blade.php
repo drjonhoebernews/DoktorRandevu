@@ -22,7 +22,7 @@
             <div class="auto-container">
                 <ul class="bread-crumb clearfix">
                     <li><a href="{{route('uzman-listesi')}}">Doktor</a></li>
-                    <li>{{$oktorbul->adinfo}}</li>
+                    <li>{{$doktorbul->adinfo}}</li>
                 </ul>
             </div>
         </div>
