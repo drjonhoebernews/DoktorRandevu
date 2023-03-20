@@ -386,22 +386,8 @@
     </section>
 @endsection
 @section('js')
-    <script>
-        $(document).ready(function () {
-            var sidebar = $('.sticky-sidebar');
-            var sidebarOffset = sidebar.offset().top;
 
-            $(window).scroll(function () {
-                var windowTop = $(window).scrollTop();
 
-                if (windowTop > sidebarOffset) {
-                    sidebar.css({ position: 'fixed', top: '20px' });
-                } else {
-                    sidebar.css('position', 'static');
-                }
-            });
-        });
-    </script>
 
     <script src="/assets/js/timePicker.js"></script>
     <script src="/assets/js/jquery-ui.js"></script>
@@ -410,4 +396,33 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
     <script src="/assets/js/gmaps.js"></script>
     <script src="/assets/js/map-helper.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var sidebar = $('.sticky-sidebar');
+            var sidebarOffset = sidebar.offset().top;
+            var footerOffset = $('.main-footer').offset().top;
+            var sidebarHeight = sidebar.outerHeight(true);
+            var stopPosition = footerOffset - sidebarHeight - 100;
+
+            // Sabit genişlik için yan panelin başlangıç genişliğini alır
+            var sidebarWidth = sidebar.width();
+
+            $(window).scroll(function () {
+                var windowTop = $(window).scrollTop();
+
+                if (windowTop > sidebarOffset) {
+                    if (windowTop < stopPosition) {
+                        sidebar.css({ position: 'fixed', top: '20px', width: sidebarWidth + 'px' });
+                    } else {
+                        var diff = windowTop - stopPosition + 20;
+                        sidebar.css({ position: 'fixed', top: '-' + diff + 'px', width: sidebarWidth + 'px' });
+                    }
+                } else {
+                    sidebar.css('position', 'static');
+                }
+            });
+        });
+    </script>
+
 @endsection
