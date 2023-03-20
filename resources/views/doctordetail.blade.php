@@ -7,17 +7,6 @@
 @endsection
 @section('content')
     <section class="page-title-two">
-{{--        <div class="title-box centred bg-color-2">--}}
-{{--            <div class="pattern-layer">--}}
-{{--                <div class="pattern-1" style="background-image: url(/assets/images/shape/shape-70.png);"></div>--}}
-{{--                <div class="pattern-2" style="background-image: url(/assets/images/shape/shape-71.png);"></div>--}}
-{{--            </div>--}}
-{{--            <div class="auto-container">--}}
-{{--                <div class="title">--}}
-{{--                    <h1>Doctor Details</h1>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
         <div class="lower-content">
             <div class="auto-container">
                 <ul class="bread-crumb clearfix">
@@ -329,7 +318,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
-                    <div class="doctors-sidebar">
+                    <div class="doctors-sidebar sticky-sidebar">
                         <div class="form-widget">
                             <div class="form-title">
                                 <h3>Book Appointment</h3>
