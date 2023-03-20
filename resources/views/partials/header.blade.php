@@ -14,47 +14,7 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="{{route('main')}}">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Home Page 01</a></li>
-                                        <li><a href="index-2.html">Home Page 02</a></li>
-                                        <li><a href="index-3.html">Home Page 03</a></li>
-                                        <li><a href="index-4.html">Home Page 04</a></li>
-                                        <li><a href="index-5.html">Home Page 05</a></li>
-                                        <li><a href="index-onepage.html">OnePage Home</a></li>
-                                        <li><a href="index-rtl.html">RTL Home</a></li>
-                                        <li class="dropdown"><a href="index.html">Header Style</a>
-                                            <ul>
-                                                <li><a href="index.html">Header Style 01</a></li>
-                                                <li><a href="index-2.html">Header Style 02</a></li>
-                                                <li><a href="index-3.html">Header Style 03</a></li>
-                                                <li><a href="index-5.html">Header Style 04</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="index.html">Doctors</a>
-                                    <ul>
-                                        <li class="dropdown"><a href="doctors-dashboard.html">Doctors Dashboard</a>
-                                            <ul>
-                                                <li><a href="doctors-dashboard.html">Dashboard</a></li>
-                                                <li><a href="appointment.html">Appointments</a></li>
-                                                <li><a href="my-patients.html">My Patients</a></li>
-                                                <li><a href="add-listing.html">Add Listing</a></li>
-                                                <li><a href="schedule-timing.html">Schedule Timing</a></li>
-                                                <li><a href="review.html">Reviews</a></li>
-                                                <li><a href="message.html">Messages</a></li>
-                                                <li><a href="my-profile.html">My Profile</a></li>
-                                                <li><a href="change-password.html">Change Password</a></li>
-                                                <li><a href="login.html">Logout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="doctors-1.html">Doctors Page 01</a></li>
-                                        <li><a href="doctors-2.html">Doctors Page 02</a></li>
-                                        <li><a href="doctors-3.html">Doctors Page 03</a></li>
-                                        <li><a href="doctors-4.html">Doctors Page 04</a></li>
-                                        <li><a href="doctors-details.html">Doctors Details</a></li>
-                                    </ul>
+                                <li class="dropdown"><a href="{{route('uzman-listesi')}}">Uzmanlar</a>
                                 </li>
                                 <li class="dropdown"><a href="index.html">Patients</a>
                                     <ul>

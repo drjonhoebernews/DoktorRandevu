@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DoktorListesiController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [MainController::class, 'index'])->name('main');
+Route::get('uzman-listesi', [DoktorListesiController::class, 'index'])->name('uzman-listesi');

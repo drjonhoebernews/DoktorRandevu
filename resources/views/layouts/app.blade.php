@@ -22,6 +22,7 @@
     <link href="/assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="/assets/css/animate.css" rel="stylesheet">
     @vite(['resources/sass/app.scss'])
+    @yield('css')
 </head>
 <body>
     <div class="boxed_wrapper">
@@ -44,6 +45,7 @@
     <script src="/assets/js/tilt.jquery.js"></script>
     <script src="/assets/js/jquery.paroller.min.js"></script>
     <script src="/assets/js/jquery.nice-select.min.js"></script>
+    @yield('js')
 
     <!-- main-js -->
 {{--    <script src="assets/js/script.js"></script>--}}
