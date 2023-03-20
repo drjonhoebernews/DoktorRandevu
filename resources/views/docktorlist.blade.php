@@ -109,9 +109,9 @@
                                                 <li><i class="icon-Trust-2"></i></li>
                                             </ul>
                                             <span class="designation">{{$doktor->uzmanlik}}</span>
-                                            <div class="text">
-                                                <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>
-                                            </div>
+{{--                                            <div class="text">--}}
+{{--                                                <p>Lorem ipsum dolor sit amet consectur adipisc elit sed eiusmod tempor incididunt labore dolore magna.</p>--}}
+{{--                                            </div>--}}
                                             <div class="rating-box clearfix">
                                                 <ul class="rating clearfix">
                                                     <li><i class="icon-Star"></i></li>
