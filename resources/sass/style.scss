@@ -329,7 +329,7 @@ img {
     color: #fff !important;
     text-align: center;
     padding: 17px 40px;
-    border-radius: 30px;
+    border-radius: 5px;
     z-index: 1;
     box-shadow: 0 20px 30px #d5edea;
     transition: all 500ms ease;
@@ -3092,7 +3092,7 @@ div#mCSB_1_container {
             }
         }
     }
-    box-shadow: 0 10px 30px rgb(57 202 187 / 10%);
+    //box-shadow: 0 10px 30px rgb(57 202 187 / 10%);
 }
 .banner-section.style-two {
     position: relative;
@@ -4851,7 +4851,7 @@ div#mCSB_1_container {
 }
 .page-title-two {
     position: relative;
-    border-bottom: 1px solid #efefef;
+    //border-bottom: 1px solid #efefef;
     .title-box {
         position: relative;
         padding: 52px 0px 48px 0px;
@@ -4917,7 +4917,7 @@ div#mCSB_1_container {
     .lower-content {
         padding: 0px 0px;
         padding: 0px 50px;
-        background-color: #f9fafb;
+        background-color: #ebf7f6;
         margin-top: 10px;
     }
 }
