@@ -62,28 +62,6 @@
                                     <div class="mb-3">
                                         <button class="btn btn-primary btn-block"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
                                     </div>
-                                    <style>
-                                        .lower-box {
-                                            display: flex;
-                                            justify-content: space-between;
-
-                                        }
-                                        /* Masüstü boyutlar */
-                                        .left {
-                                            float: left;
-                                            width: 100%;
-                                        }
-
-                                        /* Mobil boyutlar */
-                                        @media (max-width: 767px) {
-                                            .left {
-                                                float: none;
-                                                width: 100%;
-                                                margin-bottom: 10px;
-                                            }
-                                        }
-                                    </style>
-
                                     <div class="lower-box clearfix">
                                         <button class="btn btn-secondary left mr-2"><i class="fas fa-phone-square"></i> Telefon</button>
                                         <button class="btn btn-secondary left"><i class="fas fa-question-square"></i> BİLGİ AL</button>

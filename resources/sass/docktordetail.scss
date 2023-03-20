@@ -1,0 +1,19 @@
+.lower-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Masüstü boyutlar
+.left {
+    float: left;
+    width: 100%;
+}
+
+// Mobil boyutlar
+@media (max-width: 767px) {
+    .left {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
