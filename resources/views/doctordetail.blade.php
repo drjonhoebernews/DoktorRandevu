@@ -399,30 +399,41 @@
 
     <script>
         $(document).ready(function () {
-            var sidebar = $('.sticky-sidebar');
-            var sidebarOffset = sidebar.offset().top;
-            var footerOffset = $('.main-footer').offset().top;
-            var sidebarHeight = sidebar.outerHeight(true);
-            var stopPosition = footerOffset - sidebarHeight - 100;
+            function updateSidebar() {
+                var sidebar = $('.doctors-sidebar');
+                var sidebarParent = sidebar.parent();
+                var sidebarOffset = sidebarParent.offset().top;
+                var footerOffset = $('.main-footer').offset().top;
+                var sidebarHeight = sidebar.outerHeight(true);
+                var stopPosition = footerOffset - sidebarHeight - 20;
+                var sidebarWidth = sidebarParent.width();
 
-            // Sabit genişlik için yan panelin başlangıç genişliğini alır
-            var sidebarWidth = sidebar.width();
+                if (window.matchMedia('(min-width: 768px)').matches) {
+                    var windowTop = $(window).scrollTop();
 
-            $(window).scroll(function () {
-                var windowTop = $(window).scrollTop();
-
-                if (windowTop > sidebarOffset) {
-                    if (windowTop < stopPosition) {
-                        sidebar.css({ position: 'fixed', top: '20px', width: sidebarWidth + 'px' });
+                    if (windowTop > sidebarOffset) {
+                        if (windowTop < stopPosition) {
+                            sidebar.css({ position: 'fixed', top: '20px', width: sidebarWidth + 'px' });
+                        } else {
+                            var diff = windowTop - stopPosition + 20;
+                            sidebar.css({ position: 'fixed', top: '-' + diff + 'px', width: sidebarWidth + 'px' });
+                        }
                     } else {
-                        var diff = windowTop - stopPosition + 20;
-                        sidebar.css({ position: 'fixed', top: '-' + diff + 'px', width: sidebarWidth + 'px' });
+                        sidebar.css('position', 'static');
                     }
                 } else {
                     sidebar.css('position', 'static');
                 }
-            });
+            }
+
+            updateSidebar();
+            $(window).scroll(updateSidebar);
+            $(window).resize(updateSidebar);
         });
     </script>
+
+
+
+
 
 @endsection
