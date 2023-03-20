@@ -7,17 +7,17 @@
 @endsection
 @section('content')
     <section class="page-title-two">
-        <div class="title-box centred bg-color-2">
-            <div class="pattern-layer">
-                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-70.png);"></div>
-                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-71.png);"></div>
-            </div>
+{{--        <div class="title-box centred bg-color-2">--}}
+{{--            <div class="pattern-layer">--}}
+{{--                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-70.png);"></div>--}}
+{{--                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-71.png);"></div>--}}
+{{--            </div>--}}
 {{--            <div class="auto-container">--}}
 {{--                <div class="title">--}}
 {{--                    <h1>Doctor Details</h1>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-        </div>
+{{--        </div>--}}
         <div class="lower-content">
             <div class="auto-container">
                 <ul class="bread-crumb clearfix">
@@ -56,9 +56,9 @@
                                             <li><a href="doctors-details.html">(32)</a></li>
                                         </ul>
                                     </div>
-                                    <div class="text">
-                                        <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>
-                                    </div>
+{{--                                    <div class="text">--}}
+{{--                                        <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>--}}
+{{--                                    </div>--}}
                                     <div class="lower-box clearfix">
                                         <ul class="info clearfix">
                                             <li><i class="fas fa-map-marker-alt"></i>{{$doktorbul->address}}</li>
