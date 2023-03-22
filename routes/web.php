@@ -32,5 +32,6 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::get('/kliniktohospital', [\App\Http\Controllers\Api\HospitalApiController::class, 'kliniktohospital'])->name('kliniktohospital');
+Route::get('/sonuc', [\App\Http\Controllers\Api\HospitalApiController::class, 'sonuc'])->name('sonuc');
 
 

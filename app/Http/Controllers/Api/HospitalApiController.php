@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\HospitalResource;
+use App\Models\City;
+use App\Models\District;
 use App\Models\Doctorsdata;
 use App\Models\Hospital;
 use Illuminate\Http\Request;
@@ -64,20 +66,70 @@ class HospitalApiController extends Controller
         //
     }
 
-    public function kliniktohospital(){
-        $klinikbul = Doctorsdata::select('klinik','address')->get();
-
-        foreach ($klinikbul as $key => $klinik){
-            $klinikkontrol = Hospital::where('name',$klinik->name)->where('address', $klinik->adrdress)->first();
-            if (empty($klinikkontrol)){
-                $olstur = Hospital::create([
-                    'name' => $klinik->klinik,
-                    'address' => $klinik->address
-                ]);
-                $olstur->save();
-            }else{
-                print $klinik->name.'  kilinik ve '. $klinik->address.' adres var zaten';
-            }
+    static function parse_il_ilce($ilinfo)
+    {
+        $il_ilce = explode("\n", $ilinfo);
+        $il = trim($il_ilce[0]);
+        print $il_ilce[0].' u geldi <br>';
+        print !empty($il_ilce[1]) ? $il_ilce[1].' u geldi <br>' :' u geldi <br>';
+        if (empty($il_ilce[1] )){
+            $ilce = 'MERKEZ';
+        }elseif ($il_ilce[1] === 'Diğer'){
+            $ilce = 'MERKEZ';
+        }elseif ($il_ilce[0] === 'Diğer'){
+            $il = 'ANKARA';
+            $ilce = 'MERKEZ';
+        }else{
+            $ilce = trim($il_ilce[1]);
         }
+
+        return [
+            'il' => mb_strtoupper(!empty($il) ? $il :'Tanımsız'),
+            'ilce' => mb_strtoupper($ilce)
+        ];
+    }
+
+    public function kliniktohospital()
+    {
+        ini_set('max_execution_time', 4600); // 120 saniye olarak ayarlayın
+        $klinikbul = Doctorsdata::select('id','klinik', 'address','ilinfo')->where('id','>','20582')->get();
+
+        foreach ($klinikbul as $klinik) {
+            print $klinik->id.'<br>';
+            $klinikkontrol = Hospital::where('name', $klinik->klinik)->where('address', $klinik->address)->first();
+
+            if ($klinikkontrol === null) {
+                $sonuc = $this->parse_il_ilce($klinik->ilinfo);
+                $ilbul = City::where('name',$sonuc['il'])->first();
+                $ilce = District::where('name',$sonuc['ilce'])->where('city_id',$ilbul->id)->first();
+                print $ilce.'<br>';
+                if (!empty($ilce)){
+                    $ilceblog = $ilce->id;
+                }else{
+                    $ilceildenbul = District::where('city_id', $ilbul->id)->first();
+                    $ilceblog = $ilceildenbul->id;
+                }
+                Hospital::create([
+                    'name' => $klinik->klinik,
+                    'address' => $klinik->address,
+                    'city_id' => $ilbul->id,
+                    'district_id' => $ilceblog,
+                ]);
+            }
+//            else {
+//                print $klinik->klinik.' klinik ve '. $klinik->address.' adres zaten var <br>';
+//            }
+        }
+    }
+
+
+
+
+    public function sonuc(){
+        $ilinfo = "Bursa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNilüfer";
+        $sonuc = $this->parse_il_ilce($ilinfo);
+
+        echo "İl: " . $sonuc['il'] . "\n";  // Çıktı: İl: Bursa
+        echo "İlçe: " . $sonuc['ilce'] . "\n";  // Çıktı: İlçe: Nilüfer
     }
 }
