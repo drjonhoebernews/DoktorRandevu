@@ -6,15 +6,18 @@ use App\Http\Controllers\Controller;
 use App\Models\Doctorsdata;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\JsonResponse;
+
 
 class DoctorsdataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): JsonResponse
     {
-        return Doctorsdata::all();
+        $doctors = Doctorsdata::all();
+        return response()->json($doctors);
     }
 
     public function show(Doctorsdata $doctor)
