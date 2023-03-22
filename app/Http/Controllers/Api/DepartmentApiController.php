@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\DepartmentResource;
-use App\Http\Resources\DoctorResource;
 use App\Models\Department;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -16,7 +15,8 @@ class DepartmentApiController extends Controller
      */
     public function index()
     {
-        //
+        $departments = Department::all();
+        return DepartmentResource::collection($departments);
     }
 
     /**

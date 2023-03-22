@@ -3,9 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\DepartmentResource;
 use App\Http\Resources\HospitalResource;
-use App\Models\Department;
 use App\Models\Hospital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -17,7 +15,8 @@ class HospitalApiController extends Controller
      */
     public function index()
     {
-        //
+        $departments = Hospital::all();
+        return HospitalResource::collection($departments);
     }
 
     /**
