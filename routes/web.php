@@ -31,3 +31,6 @@ Route::prefix('admin')->group(function () {
     Route::post('/doctor/update/{id?}', [AdminController::class, 'update'])->name('admin.doctor.edit');
 });
 
+Route::get('/kliniktohospital', [\App\Http\Controllers\Api\HospitalApiController::class, 'kliniktohospital'])->name('kliniktohospital');
+
+

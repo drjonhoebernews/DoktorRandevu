@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\HospitalResource;
+use App\Models\Doctorsdata;
 use App\Models\Hospital;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -61,5 +62,22 @@ class HospitalApiController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function kliniktohospital(){
+        $klinikbul = Doctorsdata::select('klinik','address')->get();
+
+        foreach ($klinikbul as $key => $klinik){
+            $klinikkontrol = Hospital::where('name',$klinik->name)->where('address', $klinik->adrdress)->first();
+            if (empty($klinikkontrol)){
+                $olstur = Hospital::create([
+                    'name' => $klinik->klinik,
+                    'address' => $klinik->address
+                ]);
+                $olstur->save();
+            }else{
+                print $klinik->name.'  kilinik ve '. $klinik->address.' adres var zaten';
+            }
+        }
     }
 }
