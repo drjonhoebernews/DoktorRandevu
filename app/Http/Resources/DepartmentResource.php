@@ -17,8 +17,9 @@ class DepartmentResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'hospital' => new HospitalResource($this->whenLoaded('hospital')),
-            'doctors' => DoctorResource::collection($this->whenLoaded('doctors')),
+            'description' => $this->description,
+//            'hospital' => new HospitalResource($this->whenLoaded('hospital')),
+//            'doctors' => DoctorResource::collection($this->whenLoaded('doctors')),
             // Diğer alanları buraya ekleyin
         ];
     }

@@ -18,7 +18,7 @@
                 </div>
                 <div class="profile-info">
                     <ul class="list clearfix">
-                        <li><a href="{{route('admin.doctor')}}"><i class="fas fa-columns"></i>Dashboard</a></li>
+                        <li><a href="/admin"><i class="fas fa-columns"></i>Dashboard</a></li>
                         <li><a href="#"><i class="fas fa-calendar-alt"></i>Appointments</a></li>
                         <li><a href="#"><i class="fas fa-wheelchair"></i>My Patients</a></li>
                         <li><a href="#" class="current"><i class="fas fa-plus-circle"></i>Add Listing</a></li>

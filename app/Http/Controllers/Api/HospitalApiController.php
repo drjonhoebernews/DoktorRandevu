@@ -3,7 +3,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\DepartmentResource;
+use App\Http\Resources\HospitalResource;
+use App\Models\Department;
+use App\Models\Hospital;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class HospitalApiController extends Controller
 {
@@ -20,7 +25,19 @@ class HospitalApiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'address' => 'required',
+
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
+
+        $doctor = Hospital::create($request->all());
+
+        return new HospitalResource($doctor);
     }
 
     /**
