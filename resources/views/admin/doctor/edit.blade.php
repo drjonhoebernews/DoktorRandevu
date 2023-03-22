@@ -18,16 +18,16 @@
                 </div>
                 <div class="profile-info">
                     <ul class="list clearfix">
-                        <li><a href="doctors-dashboard.html"><i class="fas fa-columns"></i>Dashboard</a></li>
-                        <li><a href="appointment.html"><i class="fas fa-calendar-alt"></i>Appointments</a></li>
-                        <li><a href="my-patients.html"><i class="fas fa-wheelchair"></i>My Patients</a></li>
-                        <li><a href="add-listing.html" class="current"><i class="fas fa-plus-circle"></i>Add Listing</a></li>
-                        <li><a href="schedule-timing.html"><i class="fas fa-clock"></i>Schedule Timing</a></li>
-                        <li><a href="review.html"><i class="fas fa-star"></i>Reviews</a></li>
-                        <li><a href="message.html"><i class="fas fa-comments"></i>Messages</a><span>20</span></li>
-                        <li><a href="my-profile.html"><i class="fas fa-user"></i>My Profile</a></li>
-                        <li><a href="change-password.html"><i class="fas fa-unlock-alt"></i>Change Password</a></li>
-                        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                        <li><a href="{{route('admin.doctor')}}"><i class="fas fa-columns"></i>Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-calendar-alt"></i>Appointments</a></li>
+                        <li><a href="#"><i class="fas fa-wheelchair"></i>My Patients</a></li>
+                        <li><a href="#" class="current"><i class="fas fa-plus-circle"></i>Add Listing</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i>Schedule Timing</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i>Reviews</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i>Messages</a><span>20</span></li>
+                        <li><a href="#"><i class="fas fa-user"></i>My Profile</a></li>
+                        <li><a href="#"><i class="fas fa-unlock-alt"></i>Change Password</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
                     </ul>
                 </div>
             </div>
