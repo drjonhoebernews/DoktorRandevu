@@ -11,8 +11,8 @@
                     <figure class="profile-image"><img src="/assets/images/resource/profile-2.png" alt=""></figure>
                     <div class="title-box centred">
                         <div class="inner">
-                            <h3>Dr. Rex Allen</h3>
-                            <p>MDS - Periodontology</p>
+                            <h3>{{$doctor->adinfo }}</h3>
+                            <p>{{$doctor->uzmanlik }}</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <label>İLÇE İL</label>
-                                            <input type="text" name="ilinfo" value="{{$doctor->adinfo }}" required="">
+                                            <input type="text" name="ilinfo" value="{{$doctor->ilinfo }}" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <label>Klinik</label>
