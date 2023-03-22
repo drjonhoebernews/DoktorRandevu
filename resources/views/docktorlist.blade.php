@@ -51,9 +51,9 @@
                                         </div>
                                         <figure class="image-box"><img src="/assets/images/team/team-1.jpg" alt=""></figure>
                                         <div class="content-box">
-                                            <div class="like-box"><a href="{{route('doktor')}}"><i class="far fa-heart"></i></a></div>
+                                            <div class="like-box"><a href="{{route('doctor')}}"><i class="far fa-heart"></i></a></div>
                                             <ul class="name-box clearfix">
-                                                <li class="name"><h3><a href="{{route('doktor',$doktor->id)}}">{{$doktor->adinfo}}</a></h3></li>
+                                                <li class="name"><h3><a href="{{route('doctor',$doktor->id)}}">{{$doktor->adinfo}}</a></h3></li>
                                                 <li><i class="icon-Trust-1"></i></li>
                                                 <li><i class="icon-Trust-2"></i></li>
                                             </ul>

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class DoktorListesiController extends Controller
 {
     public function index(){
-        $doktorlist = Doctorsdata::paginate(50);
+        $doktorlist = Doctorsdata::paginate(10);
         $data = [
             'liste' => $doktorlist
         ];
