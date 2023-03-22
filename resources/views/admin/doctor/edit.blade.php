@@ -46,19 +46,19 @@
                                     <div class="row clearfix">
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <label>AD SOYAD ÜNVAN</label>
-                                            <input type="text" name="adinfo" value="{{$doctor->adinfo }}" required="">
+                                            <input type="text" name="adinfo" value="{{ $doctor->adinfo }}" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <label>Uzmanlık</label>
-                                            <input type="text" name="uzmanlik" value="{{$doctor->uzmanlik }}" required="">
+                                            <input type="text" name="uzmanlik" value="{{ $doctor->uzmanlik }}" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <label>İLÇE İL</label>
-                                            <input type="text" name="ilinfo" value="{{$doctor->ilinfo }}" required="">
+                                            <input type="text" name="ilinfo" value="{{ $doctor->ilinfo }}" required="">
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <label>Klinik</label>
-                                            <input type="text" name="klinik" value="{{$doctor->klinik }}" required="">
+                                            <input type="text" name="klinik" value="{{ $doctor->klinik }}" required="">
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                             <label>Profil Fotoğrafı</label>
@@ -66,7 +66,7 @@
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                             <label>Adres</label>
-                                            <textarea name="address" value="{{$doctor->address }}"></textarea>
+                                            <textarea name="address" value="{{ $doctor->klinik }}"></textarea>
                                         </div>
                                     </div>
 
