@@ -33,29 +33,29 @@
             </div>
         </div>
     </div>
-    <div class="sticky-header">
-        <div class="auto-container">
-            <div class="outer-box">
-                <div class="logo-box">
-                    <figure class="logo"><a href="{{route('main')}}"><img src="/assets/images/small-logo.png" alt=""></a></figure>
-                </div>
-                <div class="menu-area">
-                    <nav class="main-menu clearfix">
-                    </nav>
-                </div>
-                <style>
-                    .btn-box a {
-                        display: inline-block;
-                        margin-right: 10px;
-                    }
-                </style>
-                <div class="btn-box">
-                    <a href="{{ route('login') }}" class="theme-btn-one"><i class="fas fa-user-check"></i>Giriş Yap</a>
-                    <a href="{{ route('register') }}" class="theme-btn-one"><i class="fas fa-user-plus"></i>Kayıt Ol</a>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div class="sticky-header">--}}
+{{--        <div class="auto-container">--}}
+{{--            <div class="outer-box">--}}
+{{--                <div class="logo-box">--}}
+{{--                    <figure class="logo"><a href="{{route('main')}}"><img src="/assets/images/small-logo.png" alt=""></a></figure>--}}
+{{--                </div>--}}
+{{--                <div class="menu-area">--}}
+{{--                    <nav class="main-menu clearfix">--}}
+{{--                    </nav>--}}
+{{--                </div>--}}
+{{--                <style>--}}
+{{--                    .btn-box a {--}}
+{{--                        display: inline-block;--}}
+{{--                        margin-right: 10px;--}}
+{{--                    }--}}
+{{--                </style>--}}
+{{--                <div class="btn-box">--}}
+{{--                    <a href="{{ route('login') }}" class="theme-btn-one"><i class="fas fa-user-check"></i>Giriş Yap</a>--}}
+{{--                    <a href="{{ route('register') }}" class="theme-btn-one"><i class="fas fa-user-plus"></i>Kayıt Ol</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </header>
 <div class="mobile-menu">
     <div class="menu-backdrop"></div>
