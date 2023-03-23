@@ -21,6 +21,7 @@
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
     <link href="/assets/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="/assets/css/animate.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.ico">
     @vite(['resources/sass/app.scss'])
     @yield('css')
 </head>
