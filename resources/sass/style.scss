@@ -530,6 +530,9 @@ img {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        background-color: white;
+        padding-left: 10px;
+        border-radius: 5px;
     }
     .sticky-header {
         .logo-box {
@@ -1452,7 +1455,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 70px;
                     background: #fff;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 10px 90px 10px 10px;
                     font-size: 16px;
                     color: #848484;
@@ -1670,7 +1673,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         padding: 30px 30px 45px 30px;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 10px 30px #eaf2f1;
         transition: all 500ms ease;
@@ -1878,7 +1881,7 @@ div#mCSB_1_container {
     .inner-content {
         position: relative;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
     }
     .pattern-layer {
@@ -2019,7 +2022,7 @@ div#mCSB_1_container {
         position: relative;
         background: #fff;
         padding: 63px 150px 70px 70px;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         box-shadow: 0 0px 30px rgba(0, 24, 73, 0.1);
         .pattern {
@@ -2184,7 +2187,7 @@ div#mCSB_1_container {
         display: block;
         overflow: hidden;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 35px 40px 31px 170px;
         margin-bottom: 30px;
         box-shadow: 0 20px 50px rgba(0, 24, 73, 0.07);
@@ -2393,7 +2396,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         padding: 60px 40px;
-        border-radius: 10px;
+        border-radius: 5px;
         h3 {
             position: relative;
             display: block;
@@ -2587,7 +2590,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: 0 10px 30px rgba(0, 24, 73, 0.1);
         .image-box {
             position: relative;
@@ -2735,7 +2738,7 @@ div#mCSB_1_container {
     .inner-container {
         position: relative;
         padding: 50px 50px;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-bottom: -140px;
         z-index: 1;
     }
@@ -2745,7 +2748,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         border: 1px dashed rgba(255,255,255,0.3);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 27px 40px 36px 40px;
         h3 {
             display: block;
@@ -2812,7 +2815,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         border: 1px dashed rgba(255,255,255,0.3);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 29px 40px 37px 40px;
         h3 {
             display: block;
@@ -3192,11 +3195,11 @@ div#mCSB_1_container {
         position: relative;
         padding: 0px 100px 95px 60px;
         .image {
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 10px 40px rgba(0, 24, 73, 0.4);
             img {
                 width: 100%;
-                border-radius: 10px;
+                border-radius: 5px;
             }
         }
         .image-2 {
@@ -3211,7 +3214,7 @@ div#mCSB_1_container {
             background: #fff;
             max-width: 240px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 32px 20px 32px 90px;
             box-shadow: 17px 20px 80px rgba(0, 24, 73, 0.30);
             .icon-box {
@@ -3341,7 +3344,7 @@ div#mCSB_1_container {
             width: 200px;
             height: 200px;
             background: #fff;
-            border-radius: 10px;
+            border-radius: 5px;
             line-height: 200px;
             text-align: center;
             margin-bottom: 33px;
@@ -3374,7 +3377,7 @@ div#mCSB_1_container {
     .inner-box {
         position: relative;
         display: block;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         background: #fff;
         box-shadow: 0 10px 30px rgba(0, 24, 73, 0.1);
@@ -3710,7 +3713,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 40px 15px;
         margin-bottom: 30px;
         overflow: hidden;
@@ -3839,7 +3842,7 @@ div#mCSB_1_container {
             background: #fff;
             max-width: 240px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 32px 20px 32px 90px;
             box-shadow: 17px 20px 80px rgba(0, 24, 73, 0.30);
             .icon-box {
@@ -3943,7 +3946,7 @@ div#mCSB_1_container {
         overflow: hidden;
         background: #fff;
         box-shadow: 0 20px 30px rgba(0, 24, 73, 0.1);
-        border-radius: 10px;
+        border-radius: 5px;
         .image-box {
             position: relative;
             display: block;
@@ -4111,7 +4114,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-bottom: 20px;
         box-shadow: 0 10px 30px #e3eae9;
         transition: all 500ms ease;
@@ -4268,7 +4271,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         padding: 49px 30px 50px 40px;
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         .text {
             margin-bottom: 21px;
@@ -4413,10 +4416,10 @@ div#mCSB_1_container {
         .image {
             position: relative;
             float: left;
-            border-radius: 10px;
+            border-radius: 5px;
             img {
                 width: 100%;
-                border-radius: 10px;
+                border-radius: 5px;
             }
         }
         .image-1 {
@@ -4504,7 +4507,7 @@ div#mCSB_1_container {
             width: 240px;
             background: #fff;
             padding: 30px 30px 36px 30px;
-            border-radius: 10px;
+            border-radius: 5px;
             opacity: 0;
             visibility: hidden;
             transition: all 500ms ease;
@@ -4612,7 +4615,7 @@ div#mCSB_1_container {
     .content-box {
         position: relative;
         margin-bottom: -130px;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 43px 380px 41px 70px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         z-index: 1;
@@ -4853,6 +4856,7 @@ div#mCSB_1_container {
 .page-title-two {
     position: relative;
     //border-bottom: 1px solid #efefef;
+    margin-top: 35px;
     .title-box {
         position: relative;
         padding: 52px 0px 48px 0px;
@@ -4865,9 +4869,9 @@ div#mCSB_1_container {
     }
     .bread-crumb-top {
         background-color: white;
-        //box-shadow: 1px 1px 7px 3px #dbdbdb;
         padding: 10px;
         border-radius: 5px;
+        margin-top: 30px
     }
     .bread-crumb {
         li {
@@ -4955,7 +4959,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         box-shadow: 0 10px 30px #e3eae9;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         max-width: 370px;
         width: 100%;
@@ -5198,7 +5202,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         padding: 85px 40px 50px 40px;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         transition: all 500ms ease;
         .table-header {
@@ -5506,7 +5510,7 @@ div#mCSB_1_container {
     }
     .map-inner {
         position: relative;
-        border-radius: 10px;
+        border-radius: 5px;
         #contact-google-map {
             position: relative;
             width: 100%;
@@ -5520,7 +5524,7 @@ div#mCSB_1_container {
         display: block;
         overflow: hidden;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 20px 12px 50px 150px;
         margin-bottom: 15px;
         //box-shadow: 1px 1px 7px 3px #dbdbdb;
@@ -5530,11 +5534,11 @@ div#mCSB_1_container {
             top: 35px;
             width: 100px;
             height: 100px;
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0px 0px 7px 3px rgba(0, 24, 73, 0.2);
             img {
                 width: 100%;
-                border-radius: 10px;
+                border-radius: 5px;
             }
         }
         .content-box {
@@ -6068,10 +6072,10 @@ div#mCSB_1_container {
                     .image {
                         position: relative;
                         margin: 0px 5px;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         img {
                             width: 100%;
-                            border-radius: 10px;
+                            border-radius: 5px;
                         }
                     }
                 }
@@ -6094,7 +6098,7 @@ div#mCSB_1_container {
         .location-box {
             .map-inner {
                 position: relative;
-                border-radius: 10px;
+                border-radius: 5px;
                 border: 5px solid #dad9e7;
                 height: 250px;
                 margin-bottom: 20px;
@@ -6139,7 +6143,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         margin-bottom: 40px;
         .form-title {
@@ -6169,7 +6173,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 10px 20px;
                     font-size: 15px;
                     color: #808080;
@@ -6180,7 +6184,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 10px 20px;
                     font-size: 15px;
                     color: #808080;
@@ -6191,7 +6195,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 10px 20px;
                     font-size: 15px;
                     color: #808080;
@@ -6202,7 +6206,7 @@ div#mCSB_1_container {
                 .nice-select {
                     height: 50px;
                     border: 1px solid #e5e7ec !important;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 5px 20px;
                     font-size: 15px;
                     color: #808080;
@@ -6226,7 +6230,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         .info-title {
             position: relative;
@@ -6324,7 +6328,7 @@ div#mCSB_1_container {
 .profile-box {
     width: 375px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     border: 1px solid #e5eded;
     min-height: 980px;
@@ -6345,7 +6349,7 @@ div#mCSB_1_container {
             .inner {
                 position: relative;
                 background: #fff;
-                border-radius: 10px;
+                border-radius: 5px;
                 padding: 37px 30px 35px 30px;
                 margin-top: -65px;
                 box-shadow: 0 20px 30px rgba(0, 24, 73, 0.08);
@@ -6423,7 +6427,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         border: 1px solid #e5eded;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         .chat-room {
             position: relative;
@@ -6456,7 +6460,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid #e5eded;
         padding: 67px 60px 62px 180px;
         .icon-box {
@@ -6509,7 +6513,7 @@ div#mCSB_1_container {
     position: relative;
     display: block;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #e5eded;
     .title-box {
         position: relative;
@@ -6703,7 +6707,7 @@ div#mCSB_1_container {
             position: relative;
             display: block;
             background: #fff;
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden;
             .title-inner {
                 position: relative;
@@ -6777,7 +6781,7 @@ div#mCSB_1_container {
                         width: 100%;
                         height: 50px;
                         border: 1px solid #e5e7ec;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         font-size: 15px;
                         color: #808080;
                         padding: 10px 20px;
@@ -6788,7 +6792,7 @@ div#mCSB_1_container {
                         width: 100%;
                         height: 50px;
                         border: 1px solid #e5e7ec;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         font-size: 15px;
                         color: #808080;
                         padding: 10px 20px;
@@ -6799,7 +6803,7 @@ div#mCSB_1_container {
                         width: 100%;
                         height: 50px;
                         border: 1px solid #e5e7ec;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         font-size: 15px;
                         color: #808080;
                         padding: 10px 20px;
@@ -6885,16 +6889,16 @@ div#mCSB_1_container {
 }
 .appointment-section {
     position: relative;
-    padding: 120px 0px;
+    padding: 25px 0px;
     .appointment-information {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
-        margin-right: 10px;
+        margin-right: -20px;
         .inner-box {
-            padding: 30px 40px 40px 40px;
+            padding: 20px 20px 15px 15px;
             .single-box {
                 margin-bottom: 39px;
             }
@@ -6944,7 +6948,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #808080;
                 padding: 10px 20px;
@@ -6955,7 +6959,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #808080;
                 padding: 10px 20px;
@@ -6966,7 +6970,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #808080;
                 padding: 10px 20px;
@@ -6978,7 +6982,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec !important;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #808080;
                 padding: 5px 20px;
@@ -7006,7 +7010,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #808080;
                 padding: 10px 20px;
@@ -7035,10 +7039,10 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         .inner-box {
-            padding: 14px 40px 18px 40px;
+            padding: 14px 20px 18px 20px;
             border-bottom: 1px solid #e5e7ec;
         }
         .single-box {
@@ -7158,7 +7162,7 @@ div#mCSB_1_container {
             display: block;
             background: #fff;
             padding: 100px 50px 90px 50px;
-            border-radius: 10px;
+            border-radius: 5px;
             .icon-box {
                 position: relative;
                 display: inline-block;
@@ -7225,7 +7229,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         .title-box {
             position: relative;
@@ -7274,7 +7278,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #808080;
                     padding: 10px 20px;
@@ -7285,7 +7289,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #808080;
                     padding: 10px 20px;
@@ -7296,7 +7300,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #808080;
                     padding: 10px 20px;
@@ -7566,7 +7570,7 @@ div#mCSB_1_container {
                         left: 0px;
                         top: 0px;
                         width: 150px;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         padding: 18px 15px 22px 15px;
                         text-align: center;
                         h2 {
@@ -7694,10 +7698,10 @@ div#mCSB_1_container {
         top: 2px;
         width: 95px;
         height: 95px;
-        border-radius: 10px;
+        border-radius: 5px;
         img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
         }
     }
     .rating {
@@ -7881,7 +7885,7 @@ div#mCSB_1_container {
                     padding: 10px 20px;
                     color: #808080;
                     font-size: 14px;
-                    border-radius: 10px;
+                    border-radius: 5px;
                 }
                 i {
                     position: absolute;
@@ -7922,7 +7926,7 @@ div#mCSB_1_container {
             }
             padding: 9px 15px 3px 15px;
             border: 1px solid #e5e7ec;
-            border-radius: 10px;
+            border-radius: 5px;
             margin-bottom: 10px;
             &:last-child {
                 margin-bottom: 0px;
@@ -7954,7 +7958,7 @@ div#mCSB_1_container {
             display: block;
             background: #fff;
             border: 1px solid #e5eded;
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden;
             margin-bottom: 30px;
             .upper-box {
@@ -8067,7 +8071,7 @@ div#mCSB_1_container {
         position: relative;
         background: #fff;
         border: 1px solid #e5eded;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         .title-box {
             position: relative;
@@ -8182,10 +8186,10 @@ div#mCSB_1_container {
         .image-box {
             position: relative;
             display: block;
-            border-radius: 10px;
+            border-radius: 5px;
             img {
                 width: 100%;
-                border-radius: 10px;
+                border-radius: 5px;
             }
         }
     }
@@ -8197,7 +8201,7 @@ div#mCSB_1_container {
                 max-width: 640px;
                 width: 100%;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 margin-bottom: 24px;
                 .image-box {
                     position: absolute;
@@ -8328,7 +8332,7 @@ div#mCSB_1_container {
         display: block;
         background: #fff;
         border: 1px solid #e5eded;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-bottom: 50px;
         .title-box {
             position: relative;
@@ -8401,7 +8405,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #808080;
                     padding: 10px 20px;
@@ -8412,7 +8416,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #808080;
                     padding: 10px 20px;
@@ -8423,7 +8427,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #808080;
                     padding: 10px 20px;
@@ -8464,7 +8468,7 @@ div#mCSB_1_container {
     position: relative;
     background: #fff;
     border: 1px solid #e5eded;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     .title-box {
         position: relative;
@@ -8529,7 +8533,7 @@ div#mCSB_1_container {
             position: relative;
             display: block;
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 5px;
             border: 1px solid #e5eded;
         }
         .image-box {
@@ -8748,7 +8752,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 34px 40px 40px 40px;
         box-shadow: 0 10px 40px #e5ebea;
         margin-bottom: 40px;
@@ -8859,10 +8863,10 @@ div#mCSB_1_container {
                 top: 5px;
                 width: 80px;
                 height: 80px;
-                border-radius: 10px;
+                border-radius: 5px;
                 img {
                     width: 100%;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     transition: all 500ms ease;
                 }
             }
@@ -8991,7 +8995,7 @@ div#mCSB_1_container {
         display: block;
         background: #ebf7f6;
         padding: 45px 100px 45px 65px;
-        border-radius: 10px;
+        border-radius: 5px;
         margin: 6px 0px 70px 0px;
         i {
             position: absolute;
@@ -9074,7 +9078,7 @@ div#mCSB_1_container {
         background: #ebf7f6;
         padding: 30px 30px;
         margin: 70px 0px 91px 0px;
-        border-radius: 10px;
+        border-radius: 5px;
         .text {
             h4 {
                 position: relative;
@@ -9191,7 +9195,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #848484;
                     padding: 10px 20px;
@@ -9202,7 +9206,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #848484;
                     padding: 10px 20px;
@@ -9213,7 +9217,7 @@ div#mCSB_1_container {
                     width: 100%;
                     height: 50px;
                     border: 1px solid #e5e7ec;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-size: 15px;
                     color: #848484;
                     padding: 10px 20px;
@@ -9255,7 +9259,7 @@ div#mCSB_1_container {
         position: relative;
         display: block;
         background: #fff;
-        border-radius: 10px;
+        border-radius: 5px;
         overflow: hidden;
         padding: 76px 30px 69px 30px;
         .icon-box {
@@ -9315,7 +9319,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #848484;
                 padding: 10px 20px;
@@ -9326,7 +9330,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #848484;
                 padding: 10px 20px;
@@ -9337,7 +9341,7 @@ div#mCSB_1_container {
                 width: 100%;
                 height: 50px;
                 border: 1px solid #e5e7ec;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 15px;
                 color: #848484;
                 padding: 10px 20px;

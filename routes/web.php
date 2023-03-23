@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\AppointmentController;
+USE App\Http\Controllers\Api\HospitalApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +31,7 @@ Route::get('/kayit', [RegisterController::class, 'showRegistrationForm'])->name(
 Route::post('/kayit',  [RegisterController::class, 'register']);
 
 Route::get('/', [MainController::class, 'index'])->name('main');
+Route::get('/randevu-al', [AppointmentController::class, 'index'])->name('randevu-al');
 Route::get('uzman-listesi', [DoktorListesiController::class, 'index'])->name('uzman-listesi');
 Route::get('doctor/{id?}', [DoktorDetailController::class, 'show'])->name('doctor');
 
@@ -39,8 +42,8 @@ Route::prefix('admin')->group(function () {
     Route::post('/doctor/update/{id?}', [AdminController::class, 'update'])->name('admin.doctor.edit');
 });
 
-Route::get('/kliniktohospital', [\App\Http\Controllers\Api\HospitalApiController::class, 'kliniktohospital'])->name('kliniktohospital');
-Route::get('/sonuc', [\App\Http\Controllers\Api\HospitalApiController::class, 'sonuc'])->name('sonuc');
+Route::get('/kliniktohospital', [HospitalApiController::class, 'kliniktohospital'])->name('kliniktohospital');
+Route::get('/sonuc', [HospitalApiController::class, 'sonuc'])->name('sonuc');
 Route::get('/doktorcreate', [App\Http\Controllers\Api\DoctorApiController::class, 'doktorcreate'])->name('doktorcreate');
 
 

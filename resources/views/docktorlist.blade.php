@@ -4,7 +4,7 @@
     <link href="/assets/css/nice-select.css" rel="stylesheet">
 @endsection
 @section('content')
-    <section class="page-title-two mt-4">
+    <section class="page-title-two">
         <div class="lower-content">
             <div class="auto-container">
                 <div class="bread-crumb-top">
