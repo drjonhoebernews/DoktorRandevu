@@ -4,17 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Randevu') }} | Doktor Bilgini Doktor Randevu</title>
 
-    <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-{{--    <!-- Scripts -->--}}
-{{--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>--}}
     <link href="/assets/css/font-awesome-all.css" rel="stylesheet">
     <link href="/assets/css/flaticon.css" rel="stylesheet">
     <link href="/assets/css/owl.css" rel="stylesheet">
