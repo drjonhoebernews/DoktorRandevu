@@ -21,11 +21,15 @@
                     </nav>
                 </div>
                 @if(Auth::check())
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                     <div class="btn-box">
                         <div class="author">
-                            <figure class="author-image"><img src="assets/images/resource/author-1.png" alt=""></figure>
+                            <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <figure class="author-image"><img src="assets/images/resource/author-1.png" alt=""></figure>
+                            </a>
                         </div>
-{{--                        <a href="{{ route('logout') }}" class="theme-btn-one"><i class="fas fa-key"></i> Çıkış</a>--}}
                     </div>
                 @else
                     <style>
