@@ -28,9 +28,7 @@
 <div class="boxed_wrapper">
     <div class="preloader"></div>
     @include('partials.header')
-
     @yield('content')
-
     @include('partials.footer')
 </div>
 <script src="/assets/js/jquery.js"></script>
