@@ -35,7 +35,7 @@
                     <style>
                         .btn-box a {
                             display: inline-block;
-                            margin-right: 10px;
+                            margin-right: 5px;
                         }
                     </style>
                     <div class="btn-box">
@@ -75,7 +75,7 @@
     <div class="close-btn"><i class="fas fa-times"></i></div>
 
     <nav class="menu-box">
-        <div class="nav-logo"><a href="index.html"><img src="/assets/images/logo-2.png" alt="" title=""></a></div>
+        <div class="nav-logo"><a href="{{route('main')}}"><img src="/assets/images/logo-2.png" alt="" title=""></a></div>
         <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
         <div class="contact-info">
             <h4>Contact Info</h4>
