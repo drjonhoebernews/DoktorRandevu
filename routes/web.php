@@ -6,6 +6,8 @@ use App\Http\Controllers\DoktorListesiController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
+Route::get('/giris', [LoginController::class,'showLoginForm'])->name('login');
+Route::post('/giris', [LoginController::class,'login']);
+Route::post('/cikis', [LoginController::class,'logout'])->name('logout');
+
+Route::get('/kayit', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/kayit',  [RegisterController::class, 'register']);
 
 Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get('uzman-listesi', [DoktorListesiController::class, 'index'])->name('uzman-listesi');
