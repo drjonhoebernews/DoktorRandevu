@@ -512,8 +512,8 @@ img {
         -ms-flex-pack: center;
         justify-content: center;
         .theme-btn-one {
-            padding: 12px 30px;
-            font-size: 17px;
+            padding: 10px 20px;
+            font-size: 15px;
             font-weight: 500;
             box-shadow: 0 10px 10px #d5edea;
             i {
@@ -5113,6 +5113,11 @@ div#mCSB_1_container {
         }
     }
 }
+.btn-secondary {
+    background-color: white;
+    border-color:#0074D9;
+    color: #000000;
+}
 .pricing-section {
     position: relative;
     .tab-btn-box {
@@ -5886,7 +5891,7 @@ div#mCSB_1_container {
         border-radius: 5px;
         .tabs-content {
             position: relative;
-            padding: 43px 40px 50px 40px;
+            padding: 30px 15px 30px 15px;
             h3 {
                 position: relative;
                 display: block;
@@ -5947,7 +5952,7 @@ div#mCSB_1_container {
                     line-height: 26px;
                     font-weight: 600;
                     color: #a3a3a3;
-                    padding: 15px 15px 15px 15px;
+                    padding: 5px;
                     cursor: pointer;
                     border-right: 1px solid rgba(140, 140, 140, 0.1);
                     border-bottom: 1px solid rgba(140, 140, 140, 0.1);

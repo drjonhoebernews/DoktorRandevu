@@ -50,6 +50,13 @@
 {{--                                    <div class="text">--}}
 {{--                                        <p>Lorem ipsum dolor sit amet consectur adipisc eiusmod tempor incididunt.</p>--}}
 {{--                                    </div>--}}
+                                    <style>
+                                        .btn-secondary {
+                                            background-color: white;
+                                            border-color:#0074D9;
+                                            color: #000000;
+                                        }
+                                    </style>
                                     <div class="mb-3">
                                         <button class="theme-btn-one btn-block"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
                                     </div>
@@ -63,10 +70,10 @@
                         <div class="tabs-box">
                             <div class="tab-btn-box centred">
                                 <ul class="tab-btns tab-buttons clearfix">
-                                    <li class="tab-btn active-btn" data-tab="#tab-1">Overview</li>
-                                    <li class="tab-btn" data-tab="#tab-2">Experience</li>
-                                    <li class="tab-btn" data-tab="#tab-3">Location</li>
-                                    <li class="tab-btn" data-tab="#tab-4">Reviews</li>
+                                    <li class="tab-btn active-btn" data-tab="#tab-1">Genel</li>
+                                    <li class="tab-btn" data-tab="#tab-2">Deneyimler</li>
+                                    <li class="tab-btn" data-tab="#tab-3">Adresler</li>
+                                    <li class="tab-btn" data-tab="#tab-4">Görüşler</li>
                                 </ul>
                             </div>
                             <div class="tabs-content">
