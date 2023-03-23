@@ -15,7 +15,7 @@
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li><a href="{{route('uzman-listesi')}}">Uzmanlar</a></li>
-                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/blog">Sağlık Rehberi</a></li>
                             </ul>
                         </div>
                     </nav>
