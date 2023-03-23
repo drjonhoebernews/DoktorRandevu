@@ -3,7 +3,7 @@
         <div class="auto-container">
             <div class="outer-box">
                 <div class="logo-box">
-                    <figure class="logo"><a href="{{route('main')}}"><img src="/assets/images/logo-3.png" alt=""></a></figure>
+                    <figure class="logo"><a href="{{route('main')}}"><img src="/assets/images/doktorbilgini-logo.png" alt=""></a></figure>
                 </div>
                 <div class="menu-area">
                     <div class="mobile-nav-toggler">
@@ -20,16 +20,25 @@
                         </div>
                     </nav>
                 </div>
-                <style>
-                    .btn-box a {
-                        display: inline-block;
-                        margin-right: 10px;
-                    }
-                </style>
-                <div class="btn-box">
-                    <a href="{{ route('login') }}" class="theme-btn-one"><i class="fas fa-user-check"></i>Giriş Yap</a>
-                    <a href="{{ route('register') }}" class="theme-btn-one"><i class="fas fa-user-plus"></i>Kayıt Ol</a>
-                </div>
+                @if(Auth::check())
+                    <div class="btn-box">
+                        <div class="author">
+                            <figure class="author-image"><img src="assets/images/resource/author-1.png" alt=""></figure>
+                        </div>
+{{--                        <a href="{{ route('logout') }}" class="theme-btn-one"><i class="fas fa-key"></i> Çıkış</a>--}}
+                    </div>
+                @else
+                    <style>
+                        .btn-box a {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    </style>
+                    <div class="btn-box">
+                        <a href="{{ route('login') }}" class="theme-btn-one"><i class="fas fa-user-check"></i>Giriş Yap</a>
+                        <a href="{{ route('register') }}" class="theme-btn-one"><i class="fas fa-user-plus"></i>Kayıt Ol</a>
+                    </div>
+                @endif
             </div>
         </div>
     </div>

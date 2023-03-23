@@ -30,7 +30,10 @@
         @include('partials.header')
 
         @yield('content')
-
+        <!--Scroll to top-->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <span class="fa fa-arrow-up"></span>
+        </button>
         @include('partials.footer')
     </div>
     <script src="/assets/js/jquery.js"></script>
