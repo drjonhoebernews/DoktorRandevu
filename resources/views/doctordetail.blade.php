@@ -4,6 +4,21 @@
     <link href="/assets/css/nice-select.css" rel="stylesheet">
     <link href="/assets/css/jquery-ui.css" rel="stylesheet">
     <link href="/assets/css/timePicker.css" rel="stylesheet">
+    <style>
+        .modal-background {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .doctors-sidebar {
+            z-index: 1001;
+        }
+    </style>
 @endsection
 @section('content')
     <section class="page-title-two">
@@ -18,6 +33,7 @@
             </div>
         </div>
     </section>
+
     <section class="doctor-details bg-color-3">
         <div class="auto-container">
             <div class="row clearfix">
@@ -53,12 +69,12 @@
                                     <style>
                                         .btn-secondary {
                                             background-color: white;
-                                            border-color:#0074D9;
+                                            border-color: #afafaf;
                                             color: #000000;
                                         }
                                     </style>
-                                    <div class="mb-3">
-                                        <button class="theme-btn-one btn-block"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
+                                    <div class="mb-3 onmobile">
+                                        <button class="theme-btn-one btn-block"  id="randevu-btn"><i class="fas fa-calendar-check"></i> RANDEVU AL</button>
                                     </div>
                                     <div class="lower-box clearfix">
                                         <button class="btn btn-secondary left mr-2"><i class="fas fa-phone-square"></i> Telefon</button>
@@ -326,56 +342,55 @@
                         </div>
                     </div>
                 </div>
+                <style>
+                    .container {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                    }
+                </style>
                 <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
+                    <div class="modal-background"></div>
                     <div class="doctors-sidebar sticky-sidebar">
                         <div class="form-widget">
                             <div class="form-title">
-                                <h3>Book Appointment</h3>
+                                <h3>RANDEVU AL</h3>
                                 <p>Monday to Friday: 09:00Am-05:00PM</p>
                             </div>
                             <div class="form-inner">
                                 <div id="calendar-container"></div>
                                 <div class="choose-service">
-                                    <h4>Choose Service</h4>
-                                    <div class="custom-check-box">
-                                        <div class="custom-controls-stacked">
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input">
-                                                <span class="material-control-indicator"></span>
-                                                <span class="description">New Patient Visit <span class="price">$40</span></span>
-                                            </label>
+                                    <div class="day" id="day1">
+                                        <h3>Bugün</h3>
+                                        <div class="buttons">
+                                            <!-- 10 adet buton ekleyin -->
+                                            <button class="btn">Buton 1</button>
+                                            <!-- ... -->
+                                            <button class="btn">Buton 10</button>
                                         </div>
                                     </div>
-                                    <div class="custom-check-box">
-                                        <div class="custom-controls-stacked">
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input" checked="">
-                                                <span class="material-control-indicator"></span>
-                                                <span class="description">General Consultation <span class="price">$50</span></span>
-                                            </label>
+                                    <div class="day" id="day2">
+                                        <h3>yarın</h3>
+                                        <div class="buttons">
+                                            <!-- 10 adet buton ekleyin -->
+                                            <button class="btn">Buton 1</button>
+                                            <!-- ... -->
+                                            <button class="btn">Buton 10</button>
                                         </div>
                                     </div>
-                                    <div class="custom-check-box">
-                                        <div class="custom-controls-stacked">
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input">
-                                                <span class="material-control-indicator"></span>
-                                                <span class="description">Back Pain <span class="price">$60</span></span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="custom-check-box">
-                                        <div class="custom-controls-stacked">
-                                            <label class="custom-control material-checkbox">
-                                                <input type="checkbox" class="material-control-input">
-                                                <span class="material-control-indicator"></span>
-                                                <span class="description">Diabetes Consultation <span class="price">$35</span></span>
-                                            </label>
+                                    <div class="day" id="day2">
+                                        <h3>sonrakigün</h3>
+                                        <div class="buttons">
+                                            <!-- 10 adet buton ekleyin -->
+                                            <button class="btn">Buton 1</button>
+                                            <!-- ... -->
+                                            <button class="btn">Buton 10</button>
                                         </div>
                                     </div>
                                     <div class="btn-box">
-                                        <a href="book-appointment.html" class="theme-btn-one">Book Appoinment<i class="icon-Arrow-Right"></i></a>
+                                        <a href="book-appointment.html" class="theme-btn-one">Randevu Onayla<i class="icon-Arrow-Right"></i></a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -433,6 +448,22 @@
             updateSidebar();
             $(window).scroll(updateSidebar);
             $(window).resize(updateSidebar);
+        });
+    </script>
+    <script>
+        // randevu al butonuna tıklama olayını dinle
+        document.querySelector('#randevu-btn').addEventListener('click', function() {
+            // .doctors-sidebar ve .modal-background öğelerini görünür hale getir
+            document.querySelector('.doctors-sidebar').style.zIndex = 1000;
+            document.querySelector('.doctors-sidebar').style.position = 'sticky';
+            document.querySelector('.modal-background').style.display = 'block';
+        });
+
+        // .modal-background'a tıklama olayını dinle
+        document.querySelector('.modal-background').addEventListener('click', function() {
+            // .doctors-sidebar ve .modal-background öğelerini gizle
+            document.querySelector('.doctors-sidebar').style.zIndex = '';
+            document.querySelector('.modal-background').style.display = 'none';
         });
     </script>
 

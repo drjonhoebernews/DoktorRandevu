@@ -9,7 +9,7 @@
             <div class="auto-container">
                 <div class="bread-crumb-top">
                     <ul class="bread-crumb clearfix">
-                        <li><a href="index.html">Doktor</a></li>
+                        <li><a href="{{route('main')}}">Anasayfa</a></li>
                         <li>Doktor Listesi</li>
                     </ul>
                 </div>
@@ -24,19 +24,7 @@
                     <div class="bread-crumb-top">
                         <div class="item-shorting clearfix">
                             <div class="left-column pull-left">
-                                <h3>Toplam {{count($liste)}} adet gösteriliyor</h3>
-                            </div>
-                            <div class="right-column pull-right clearfix">
-                                <div class="short-box clearfix">
-                                    <div class="select-box">
-                                        <select class="wide">
-                                            <option data-display="Sırala">Sırala</option>
-                                            <option value="1">Cardiology</option>
-                                            <option value="2">Nurology</option>
-                                            <option value="4">Pragnency</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <h4 style="font-size: 15px">Toplam {{$liste->lastPage()}} sayfa da {{count($liste)}} ar adet <b>DOKTOR</b> gösteriliyor..</h4>
                             </div>
                         </div>
                     </div>

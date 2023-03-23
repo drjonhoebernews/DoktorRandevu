@@ -4922,8 +4922,6 @@ div#mCSB_1_container {
         }
     }
     .lower-content {
-        padding: 0px 0px;
-        padding: 0px 50px;
         background-color: #f3f3f3;
         margin-top: 10px;
     }
@@ -5435,15 +5433,16 @@ div#mCSB_1_container {
 }
 .clinic-section {
     position: relative;
-    padding: 80px 0px 120px 0px;
+    padding: 15px 0px 120px 0px;
     .bread-crumb-top {
         background-color: #fff;
-        padding: 7px 0px 0px 5px;
         border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
     }
     .item-shorting {
         position: relative;
-        margin-bottom: 40px;
+        //margin-bottom: 15px;
         .left-column {
             h3 {
                 font-size: 26px;

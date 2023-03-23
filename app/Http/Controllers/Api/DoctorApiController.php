@@ -29,13 +29,13 @@ class DoctorApiController extends Controller
 
     public function doktorcreate(){
         ini_set('max_execution_time', 4600); // 120 saniye olarak ayarlayın
-        $doktorbul = Doctorsdata::select('id', 'adinfo', 'uzmanlik', 'klinik')->where('id','>',5959)->get();
+        $doktorbul = Doctorsdata::select('id', 'adinfo', 'uzmanlik', 'klinik')->where('id','>',6577)->get();
 
-        foreach ($doktorbul as $doktorData) {
+        foreach ($doktorbul as $key => $doktorData) {
             // Yeni bir kullanıcı oluşturun ve şifreyi hash'leyin
             $user = new User([
                 'name' => $doktorData->adinfo,
-                'email' => str::slug($doktorData->adinfo).'@doktorbilgini.com', // Burada gerçek e-posta adresini kullanmalısınız
+                'email' => str::slug($doktorData->adinfo.''.$key).'@doktorbilgini.com', // Burada gerçek e-posta adresini kullanmalısınız
                 'password' => Hash::make('sifre123'), // Burada gerçek şifreyi kullanmalısınız
                 'user_type' => 'doctor',
             ]);
