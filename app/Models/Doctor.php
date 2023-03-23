@@ -22,26 +22,26 @@ class Doctor extends Model
         'slug'
     ];
 
-    protected static function booted()
-    {
-        static::creating(function ($doctor) {
-            // Yeni bir kullanıcı oluşturun ve şifreyi hash'leyin
-            $user = new User([
-                'name' => $doctor->name,
-                'email' => $doctor->email,
-                'password' => Hash::make($doctor->password),
-                'user_type' => 'doctor',
-            ]);
-
-            // Kullanıcıyı kaydedin ve doktorun user_id alanını güncelleyin
-            $user->save();
-            $doctor->user_id = $user->id;
-        });
-
-        static::saving(function ($doctor) {
-            $doctor->slug = Str::slug($doctor->name);
-        });
-    }
+//    protected static function booted()
+//    {
+//        static::creating(function ($doctor) {
+//            // Yeni bir kullanıcı oluşturun ve şifreyi hash'leyin
+//            $user = new User([
+//                'name' => $doctor->name,
+//                'email' => $doctor->email,
+//                'password' => Hash::make($doctor->password),
+//                'user_type' => 'doctor',
+//            ]);
+//
+//            // Kullanıcıyı kaydedin ve doktorun user_id alanını güncelleyin
+//            $user->save();
+//            $doctor->user_id = $user->id;
+//        });
+//
+//        static::saving(function ($doctor) {
+//            $doctor->slug = Str::slug($doctor->name);
+//        });
+//    }
 
     public function user()
     {
@@ -50,7 +50,7 @@ class Doctor extends Model
 
     public function hospitals()
     {
-        return $this->belongsToMany(Hospital::class);
+        return $this->belongsToMany(Hospital::class, 'doctor_hospital');
     }
 
     public function departments()

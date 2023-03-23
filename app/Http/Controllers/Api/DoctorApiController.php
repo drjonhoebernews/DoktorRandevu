@@ -6,9 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\AppointmentResource;
 use App\Http\Resources\DoctorResource;
 use App\Http\Resources\PatientResource;
+use App\Models\Department;
 use App\Models\Doctor;
+use App\Models\Doctorsdata;
+use App\Models\Hospital;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class DoctorApiController extends Controller
 {
@@ -19,6 +25,54 @@ class DoctorApiController extends Controller
     {
         $doctors = Doctor::all();
         return DoctorResource::collection($doctors);
+    }
+
+    public function doktorcreate(){
+        ini_set('max_execution_time', 4600); // 120 saniye olarak ayarlayın
+        $doktorbul = Doctorsdata::select('id', 'adinfo', 'uzmanlik', 'klinik')->where('id','>',4959)->get();
+
+        foreach ($doktorbul as $doktorData) {
+            // Yeni bir kullanıcı oluşturun ve şifreyi hash'leyin
+            $user = new User([
+                'name' => $doktorData->adinfo,
+                'email' => str::slug($doktorData->adinfo).'@doktorbilgini.com', // Burada gerçek e-posta adresini kullanmalısınız
+                'password' => Hash::make('sifre123'), // Burada gerçek şifreyi kullanmalısınız
+                'user_type' => 'doctor',
+            ]);
+
+            // Kullanıcıyı kaydedin
+            $user->save();
+
+            $uzmanlikAdlari = explode(',', $doktorData->uzmanlik);
+            $klinikAdlari = $doktorData->klinik;
+
+            $uzmanlikIds = [];
+            foreach ($uzmanlikAdlari as $uzmanlikAdi) {
+                $uzmanlik = Department::where('name', $uzmanlikAdi)->first();
+                if ($uzmanlik) {
+                    $uzmanlikIds[] = $uzmanlik->id;
+                }
+            }
+
+            $klinikIds = [];
+            $klinik = Hospital::where('name', $klinikAdlari)->first();
+            if ($klinik) {
+                $klinikIds[] = $klinik->id;
+            }
+            $type = (str_contains($doktorData->klinik, 'devlet hastane') || str_contains($doktorData->klinik, 'şehir hastane')) ? 'mhrs' : 'kayitsiz';
+
+            $doktor = new Doctor([
+                'user_id' => $user->id,
+                'specialty' => '', // Eğer özel bir değer varsa, buraya ekleyin
+                'type' => $type,
+            ]);
+            // Doktoru kaydedin
+            $doktor->save();
+
+            // Doktorun uzmanlık ve klinik ilişkilerini ayarlayın
+            $doktor->departments()->attach($uzmanlikIds);
+            $doktor->hospitals()->attach($klinikIds);
+        }
     }
 
     /**
