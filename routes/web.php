@@ -36,14 +36,14 @@ Route::get('uzman-listesi', [DoktorListesiController::class, 'index'])->name('uz
 Route::get('doctor/{id?}', [DoktorDetailController::class, 'show'])->name('doctor');
 
 
-Route::prefix('admin')->group(function () {
+Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'doktorget'])->name('admin.doctor');
     Route::get('/doctor/edit/{id?}', [AdminController::class, 'edit'])->name('admin.doctor');
     Route::post('/doctor/update/{id?}', [AdminController::class, 'update'])->name('admin.doctor.edit');
 });
 
-Route::get('/kliniktohospital', [HospitalApiController::class, 'kliniktohospital'])->name('kliniktohospital');
-Route::get('/sonuc', [HospitalApiController::class, 'sonuc'])->name('sonuc');
-Route::get('/doktorcreate', [App\Http\Controllers\Api\DoctorApiController::class, 'doktorcreate'])->name('doktorcreate');
+//Route::get('/kliniktohospital', [HospitalApiController::class, 'kliniktohospital'])->name('kliniktohospital');
+//Route::get('/sonuc', [HospitalApiController::class, 'sonuc'])->name('sonuc');
+//Route::get('/doktorcreate', [App\Http\Controllers\Api\DoctorApiController::class, 'doktorcreate'])->name('doktorcreate');
 
 
